@@ -1,4 +1,4 @@
-Depreciated Remote files for controlling Reason's Main Mixer using the Behringer X-Touch.
+Deprecated Remote files for controlling Reason's Main Mixer using the Behringer X-Touch.
 
 First of all this is based on the X-Touch Codecs by Jaexx, without which there's not way I would have been able to do anything at all – my coding skills are basic and I understand he has put a lot of time and effort into creating his codecs and maps. That said I have done my best to hack the codecs to suit my needs. My modified codec only supports the X-Touch itself and not any of the Extenders that the Jaexx codec supports. Also, importantly, I have renamed all the Remote files so they show as Behringer not Mackie. This means you can run the Jaexx codec alongside this without breaking it, and switch between the two.
 
