@@ -5,4 +5,5 @@ First of all this is based on the X-Touch Codecs by Jaexx, without which there's
 The maps are completely new and are arranged in a way that made more sense to me. So you use the Encoder Assign buttons to choose which section of the Reason mixer to control and for most of these you also have the F Keys providing variations / layers for each section. Then you can flip between Global Mode (mixer overview) and the Select keys (for channel selection). There's a lot going on, so I've written a simple guide that shows you what does what, but also try it out. The idea was to make something that isn't very complex and all the important features are only a couple of button presses.
 
 Jaexx: https://www.jaexx.com/blog/reason-custom-behringer-x-touch-remote-map-layout/
+
 ReasonTalk thread: https://forum.reasontalk.com/viewtopic.php?p=682024
