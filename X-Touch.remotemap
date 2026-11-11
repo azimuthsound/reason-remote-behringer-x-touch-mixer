@@ -1,0 +1,2583 @@
+Propellerhead Remote Mapping File
+File Format Version	1.0.0
+Control Surface Manufacturer	Behringer
+Control Surface Model	X-Touch
+Map Version	1.6.9
+
+
+
+
+Scope	Propellerheads	Reason Document
+
+// _____________________________________________________
+
+Define Group	Wheel	Coarse	Fine
+Define Group	Pos	Song	Left	Right
+Define Group	Pos Display	BarsBeats	Time
+
+// _____________________________________________________
+
+// Map	LCD Row 1		"Lock ToReason VirtualSSL    9000K  Master Mix    Section" 
+
+// _____________________________________________________
+
+Map	Zoom Button		Pos=Song
+Map	Rewind Button		Pos=Left
+Map	Fast Fwd Button		Pos=Right
+
+
+// _____________________________________________________
+
+Map	SMPTE/Beats Button		Pos Display=Time			BarsBeats
+Map	SMPTE/Beats Button		Pos Display=BarsBeats			Time
+
+// _____________________________________________________
+
+
+// _________ TRANSPORT
+
+Map	Stop Button		Stop
+Map	Play Button		Play
+Map	Record Button		Record
+
+
+// _________ TRANSPORT BUTTONS
+
+Map	Marker Button		Goto Left Locator
+Map	Nudge Button		Goto Right Locator
+
+Map	Cycle Button		Loop On/Off
+Map	Click Button		Click On/Off
+// Map	Solo Button		Target Track Solo
+
+
+Map	Read/Off Button		Reset Automation Override
+
+Map	Shift Button		New Alternative Take
+Map	Alt Button		New Overdub
+
+// Map	Touch Button		Auto-quantize
+
+
+// _________ AUTOMATION BUTTONS
+
+
+Map	Save Button		Redo
+Map	Undo Button		Undo
+
+
+
+
+
+// _________ JOG WHEEL
+
+Map	Jog Wheel		Song Position	245760		Coarse	Song
+Map	Jog Wheel		Left Loop	245760		Coarse	Left
+Map	Jog Wheel		Right Loop	245760		Coarse	Right
+
+// _________ JOG WHEEL BUTTONS
+
+Map	Left Button		Bar Position Down
+Map	Right Button		Bar Position Up
+
+Map	Up Button		Target Previous Track
+Map	Down Button		Target Next Track
+
+
+
+
+// _________ POSITION DISPLAY
+
+Map	Bars Display		Bar Position			BarsBeats	Song
+Map	Beats Display		Beat Position			BarsBeats	Song
+Map	Sub-division Display		Sixteenth Position			BarsBeats	Song
+//Map	Ticks Display		Tick Position			BarsBeats	Song
+
+Map	Bars Display		Hour Position			Time	Song
+Map	Beats Display		Minute Position			Time	Song
+Map	Sub-division Display		Second Position			Time	Song
+
+// LEFT LOOP
+
+Map	Sub-division Display		Left Loop Bar			Left
+Map	Ticks Display		Right Loop Bar			Left
+
+Map	Sub-division Display		Left Loop Bar			Right
+Map	Ticks Display		Right Loop Bar			Right
+
+
+// Map	Bars Display		Right Loop Bar				Right
+// Map	Beats Display		Right Loop Beat				Right
+// Map	Sub-division Display		Right Loop 16th				Right
+
+
+
+
+
+
+
+
+// __________________________________________________
+
+Scope	Propellerheads	Reason Master Section
+
+// Groups
+Define Group	Grp_Encoders	Enc_Pan	Enc_Track	Enc_EQ	Enc_Send	Enc_Plugin	Enc_Inst
+Define Group	Grp_Select	Global_0	Select1	Select2	Select3	Select4	Select5	Select6	Select7	Select8
+Define Group	Grp_Flip	Global	Flip
+Define Group	Grp_Fkeys	Func_F1	Func_F2	Func_F3	Func_F4	Func_F5	Func_F6	Func_F7	Func_F8
+
+
+// GROUP 1 _________ ENCODER ASSIGN SECTION
+
+Map	Track Button		Grp_Encoders=Enc_Track
+Map	Pan Button		Grp_Encoders=Enc_Pan
+Map	EQ Button		Grp_Encoders=Enc_EQ
+Map	Send Button		Grp_Encoders=Enc_Send
+Map	Plugin Button		Grp_Encoders=Enc_Plugin
+Map	Instrument Button		Grp_Encoders=Enc_Inst
+
+
+// GROUP 2  _________ SELECT BUTTONS
+
+Map	Global View Button		Grp_Select=Global_0
+Map	Select 1		Grp_Select=Select1
+Map	Select 2		Grp_Select=Select2
+Map	Select 3		Grp_Select=Select3
+Map	Select 4		Grp_Select=Select4
+Map	Select 5		Grp_Select=Select5
+Map	Select 6		Grp_Select=Select6
+Map	Select 7		Grp_Select=Select7
+Map	Select 8		Grp_Select=Select8
+
+Map	Global View Button		Grp_Select=Global_0			Global_0
+Map	Select 1		Grp_Select=Global_0			Select1
+Map	Select 2		Grp_Select=Global_0			Select2
+Map	Select 3		Grp_Select=Global_0			Select3
+Map	Select 4		Grp_Select=Global_0			Select4
+Map	Select 5		Grp_Select=Global_0			Select5
+Map	Select 6		Grp_Select=Global_0			Select6
+Map	Select 7		Grp_Select=Global_0			Select7
+Map	Select 8		Grp_Select=Global_0			Select8
+
+Map	Select LED 1		1			Select1
+Map	Select LED 2		1			Select2
+Map	Select LED 3		1			Select3
+Map	Select LED 4		1			Select4
+Map	Select LED 5		1			Select5
+Map	Select LED 6		1			Select6
+Map	Select LED 7		1			Select7
+Map	Select LED 8		1			Select8
+
+
+// GROUP 3  _________ FLIP MODE - CURRENTLY NOT IN USE
+
+// Map	Flip Button		Grp_Flip=Flip
+// Map	Global View Button		Grp_Flip=Global
+
+
+// GROUP 4  _________ F KEYS
+
+Map	F1 Button		Grp_Fkeys=Func_F1
+Map	F2 Button		Grp_Fkeys=Func_F2
+Map	F3 Button		Grp_Fkeys=Func_F3
+Map	F4 Button		Grp_Fkeys=Func_F4
+Map	F5 Button		Grp_Fkeys=Func_F5
+Map	F6 Button		Grp_Fkeys=Func_F6
+Map	F7 Button		Grp_Fkeys=Func_F7
+Map	F8 Button		Grp_Fkeys=Func_F8
+
+
+
+// _________ AUTOMATION BUTTONS
+
+// GROUP
+
+Map	Channel Left Button		Previous Remote Base Channel
+Map	Channel Right Button		Next Remote Base Channel
+Map	Fader Bank Left Button		Previous 8 Remote Base Channel
+Map	Fader Bank Right Button		Next 8 Remote Base Channel
+
+
+// _________ FADER
+
+Map	Fader 1		Channel 1 Level			Global
+Map	Fader 2		Channel 2 Level			Global
+Map	Fader 3		Channel 3 Level			Global
+Map	Fader 4		Channel 4 Level			Global
+Map	Fader 5		Channel 5 Level			Global
+Map	Fader 6		Channel 6 Level			Global
+Map	Fader 7		Channel 7 Level			Global
+Map	Fader 8		Channel 8 Level			Global
+
+Map	Fader 1		Channel 1 Level			Flip
+Map	Fader 2		Channel 2 Level			Flip
+Map	Fader 3		Channel 3 Level			Flip
+Map	Fader 4		Channel 4 Level			Flip
+Map	Fader 5		Channel 5 Level			Flip
+Map	Fader 6		Channel 6 Level			Flip
+Map	Fader 7		Channel 7 Level			Flip
+Map	Fader 8		Channel 8 Level			Flip
+
+Map	Master Fader		Ctrl Room Level
+
+// _________ METERS
+
+Map	Peak Meter 1		Channel 1 VU Meter				Global_0	Func_F1
+Map	Peak Meter 2		Channel 2 VU Meter				Global_0	Func_F1
+Map	Peak Meter 3		Channel 3 VU Meter				Global_0	Func_F1
+Map	Peak Meter 4		Channel 4 VU Meter				Global_0	Func_F1
+Map	Peak Meter 5		Channel 5 VU Meter				Global_0	Func_F1
+Map	Peak Meter 6		Channel 6 VU Meter				Global_0	Func_F1
+Map	Peak Meter 7		Channel 7 VU Meter				Global_0	Func_F1
+Map	Peak Meter 8		Channel 8 VU Meter				Global_0	Func_F1
+
+Map	Peak Meter 1		Channel 1 VU Meter				Select1	Func_F1
+Map	Peak Meter 2		0				Select1	Func_F1
+Map	Peak Meter 3		0				Select1	Func_F1
+Map	Peak Meter 4		0				Select1	Func_F1
+Map	Peak Meter 5		0				Select1	Func_F1
+Map	Peak Meter 6		0				Select1	Func_F1
+Map	Peak Meter 7		0				Select1	Func_F1
+Map	Peak Meter 8		0				Select1	Func_F1
+
+Map	Peak Meter 1		0				Select2	Func_F1
+Map	Peak Meter 2		Channel 2 VU Meter				Select2	Func_F1
+Map	Peak Meter 3		0				Select2	Func_F1
+Map	Peak Meter 4		0				Select2	Func_F1
+Map	Peak Meter 5		0				Select2	Func_F1
+Map	Peak Meter 6		0				Select2	Func_F1
+Map	Peak Meter 7		0				Select2	Func_F1
+Map	Peak Meter 8		0				Select2	Func_F1
+
+Map	Peak Meter 1		0				Select3	Func_F1
+Map	Peak Meter 2		0				Select3	Func_F1
+Map	Peak Meter 3		Channel 3 VU Meter				Select3	Func_F1
+Map	Peak Meter 4		0				Select3	Func_F1
+Map	Peak Meter 5		0				Select3	Func_F1
+Map	Peak Meter 6		0				Select3	Func_F1
+Map	Peak Meter 7		0				Select3	Func_F1
+Map	Peak Meter 8		0				Select3	Func_F1
+
+Map	Peak Meter 1		0				Select4	Func_F1
+Map	Peak Meter 2		0				Select4	Func_F1
+Map	Peak Meter 3		0				Select4	Func_F1
+Map	Peak Meter 4		Channel 4 VU Meter				Select4	Func_F1
+Map	Peak Meter 5		0				Select4	Func_F1
+Map	Peak Meter 6		0				Select4	Func_F1
+Map	Peak Meter 7		0				Select4	Func_F1
+Map	Peak Meter 8		0				Select4	Func_F1
+
+Map	Peak Meter 1		0				Select5	Func_F1
+Map	Peak Meter 2		0				Select5	Func_F1
+Map	Peak Meter 3		0				Select5	Func_F1
+Map	Peak Meter 4		0				Select5	Func_F1
+Map	Peak Meter 5		Channel 5 VU Meter				Select5	Func_F1
+Map	Peak Meter 6		0				Select5	Func_F1
+Map	Peak Meter 7		0				Select5	Func_F1
+Map	Peak Meter 8		0				Select5	Func_F1
+
+Map	Peak Meter 1		0				Select6	Func_F1
+Map	Peak Meter 2		0				Select6	Func_F1
+Map	Peak Meter 3		0				Select6	Func_F1
+Map	Peak Meter 4		0				Select6	Func_F1
+Map	Peak Meter 5		0				Select6	Func_F1
+Map	Peak Meter 6		Channel 6 VU Meter				Select6	Func_F1
+Map	Peak Meter 7		0				Select6	Func_F1
+Map	Peak Meter 8		0				Select6	Func_F1
+
+Map	Peak Meter 1		0				Select7	Func_F1
+Map	Peak Meter 2		0				Select7	Func_F1
+Map	Peak Meter 3		0				Select7	Func_F1
+Map	Peak Meter 4		0				Select7	Func_F1
+Map	Peak Meter 5		0				Select7	Func_F1
+Map	Peak Meter 6		0				Select7	Func_F1
+Map	Peak Meter 7		Channel 7 VU Meter				Select7	Func_F1
+Map	Peak Meter 8		0				Select7	Func_F1
+
+Map	Peak Meter 1		0				Select8	Func_F1
+Map	Peak Meter 2		0				Select8	Func_F1
+Map	Peak Meter 3		0				Select8	Func_F1
+Map	Peak Meter 4		0				Select8	Func_F1
+Map	Peak Meter 5		0				Select8	Func_F1
+Map	Peak Meter 6		0				Select8	Func_F1
+Map	Peak Meter 7		0				Select8	Func_F1
+Map	Peak Meter 8		Channel 8 VU Meter				Select8	Func_F1
+
+
+Map	Peak Meter 1		Channel 1 VU Meter				Select1	Func_F2
+Map	Peak Meter 2		Channel 2 VU Meter				Select1	Func_F2
+Map	Peak Meter 3		Channel 3 VU Meter				Select1	Func_F2
+Map	Peak Meter 4		Channel 4 VU Meter				Select1	Func_F2
+Map	Peak Meter 5		Channel 5 VU Meter				Select1	Func_F2
+Map	Peak Meter 6		Channel 6 VU Meter				Select1	Func_F2
+Map	Peak Meter 7		Channel 7 VU Meter				Select1	Func_F2
+Map	Peak Meter 8		Channel 8 VU Meter				Select1	Func_F2
+
+Map	Peak Meter 1		Channel 1 VU Meter				Select2	Func_F2
+Map	Peak Meter 2		Channel 2 VU Meter				Select2	Func_F2
+Map	Peak Meter 3		Channel 3 VU Meter				Select2	Func_F2
+Map	Peak Meter 4		Channel 4 VU Meter				Select2	Func_F2
+Map	Peak Meter 5		Channel 5 VU Meter				Select2	Func_F2
+Map	Peak Meter 6		Channel 6 VU Meter				Select2	Func_F2
+Map	Peak Meter 7		Channel 7 VU Meter				Select2	Func_F2
+Map	Peak Meter 8		Channel 8 VU Meter				Select2	Func_F2
+
+Map	Peak Meter 1		Channel 1 VU Meter				Select3	Func_F2
+Map	Peak Meter 2		Channel 2 VU Meter				Select3	Func_F2
+Map	Peak Meter 3		Channel 3 VU Meter				Select3	Func_F2
+Map	Peak Meter 4		Channel 4 VU Meter				Select3	Func_F2
+Map	Peak Meter 5		Channel 5 VU Meter				Select3	Func_F2
+Map	Peak Meter 6		Channel 6 VU Meter				Select3	Func_F2
+Map	Peak Meter 7		Channel 7 VU Meter				Select3	Func_F2
+Map	Peak Meter 8		Channel 8 VU Meter				Select3	Func_F2
+
+Map	Peak Meter 1		Channel 1 VU Meter				Select4	Func_F2
+Map	Peak Meter 2		Channel 2 VU Meter				Select4	Func_F2
+Map	Peak Meter 3		Channel 3 VU Meter				Select4	Func_F2
+Map	Peak Meter 4		Channel 4 VU Meter				Select4	Func_F2
+Map	Peak Meter 5		Channel 5 VU Meter				Select4	Func_F2
+Map	Peak Meter 6		Channel 6 VU Meter				Select4	Func_F2
+Map	Peak Meter 7		Channel 7 VU Meter				Select4	Func_F2
+Map	Peak Meter 8		Channel 8 VU Meter				Select4	Func_F2
+
+Map	Peak Meter 1		Channel 1 VU Meter				Select5	Func_F2
+Map	Peak Meter 2		Channel 2 VU Meter				Select5	Func_F2
+Map	Peak Meter 3		Channel 3 VU Meter				Select5	Func_F2
+Map	Peak Meter 4		Channel 4 VU Meter				Select5	Func_F2
+Map	Peak Meter 5		Channel 5 VU Meter				Select5	Func_F2
+Map	Peak Meter 6		Channel 6 VU Meter				Select5	Func_F2
+Map	Peak Meter 7		Channel 7 VU Meter				Select5	Func_F2
+Map	Peak Meter 8		Channel 8 VU Meter				Select5	Func_F2
+
+Map	Peak Meter 1		Channel 1 VU Meter				Select6	Func_F2
+Map	Peak Meter 2		Channel 2 VU Meter				Select6	Func_F2
+Map	Peak Meter 3		Channel 3 VU Meter				Select6	Func_F2
+Map	Peak Meter 4		Channel 4 VU Meter				Select6	Func_F2
+Map	Peak Meter 5		Channel 5 VU Meter				Select6	Func_F2
+Map	Peak Meter 6		Channel 6 VU Meter				Select6	Func_F2
+Map	Peak Meter 7		Channel 7 VU Meter				Select6	Func_F2
+Map	Peak Meter 8		Channel 8 VU Meter				Select6	Func_F2
+
+Map	Peak Meter 1		Channel 1 VU Meter				Select7	Func_F2
+Map	Peak Meter 2		Channel 2 VU Meter				Select7	Func_F2
+Map	Peak Meter 3		Channel 3 VU Meter				Select7	Func_F2
+Map	Peak Meter 4		Channel 4 VU Meter				Select7	Func_F2
+Map	Peak Meter 5		Channel 5 VU Meter				Select7	Func_F2
+Map	Peak Meter 6		Channel 6 VU Meter				Select7	Func_F2
+Map	Peak Meter 7		Channel 7 VU Meter				Select7	Func_F2
+Map	Peak Meter 8		Channel 8 VU Meter				Select7	Func_F2
+
+Map	Peak Meter 1		Channel 1 VU Meter				Select8	Func_F2
+Map	Peak Meter 2		Channel 2 VU Meter				Select8	Func_F2
+Map	Peak Meter 3		Channel 3 VU Meter				Select8	Func_F2
+Map	Peak Meter 4		Channel 4 VU Meter				Select8	Func_F2
+Map	Peak Meter 5		Channel 5 VU Meter				Select8	Func_F2
+Map	Peak Meter 6		Channel 6 VU Meter				Select8	Func_F2
+Map	Peak Meter 7		Channel 7 VU Meter				Select8	Func_F2
+Map	Peak Meter 8		Channel 8 VU Meter				Select8	Func_F2
+
+// _________ MUTE / SOLO
+
+Map	Mute 1		Channel 1 Mute
+Map	Mute 2		Channel 2 Mute
+Map	Mute 3		Channel 3 Mute
+Map	Mute 4		Channel 4 Mute
+Map	Mute 5		Channel 5 Mute
+Map	Mute 6		Channel 6 Mute
+Map	Mute 7		Channel 7 Mute
+Map	Mute 8		Channel 8 Mute
+
+Map	Solo Button		All Solo Off
+
+// Map	Redo Button		All Mutes Off
+
+Map	Solo 1		Channel 1 Solo
+Map	Solo 2		Channel 2 Solo
+Map	Solo 3		Channel 3 Solo
+Map	Solo 4		Channel 4 Solo
+Map	Solo 5		Channel 5 Solo
+Map	Solo 6		Channel 6 Solo
+Map	Solo 7		Channel 7 Solo
+Map	Solo 8		Channel 8 Solo
+
+
+
+
+// _____________ TRACK _____________ BUTTONS 
+// _____________ F1
+
+Map	LCD Row 2 Channel 1		">COMP"			Enc_Track		Global_0	Func_F1
+Map	LCD Row 2 Channel 2		""			Enc_Track		Global_0	Func_F1
+Map	LCD Row 2 Channel 3		""			Enc_Track		Global_0	Func_F1
+Map	LCD Row 2 Channel 4		""			Enc_Track		Global_0	Func_F1
+Map	LCD Row 2 Channel 5		""			Enc_Track		Global_0	Func_F1
+Map	LCD Row 2 Channel 6		""			Enc_Track		Global_0	Func_F1
+Map	LCD Row 2 Channel 7		""			Enc_Track		Global_0	Func_F1
+Map	LCD Row 2 Channel 8		""			Enc_Track		Global_0	Func_F1
+
+Map	Record 1		Channel 1 Comp On			Enc_Track		Global_0	Func_F1
+Map	Record 2		Channel 2 Comp On			Enc_Track		Global_0	Func_F1
+Map	Record 3		Channel 3 Comp On			Enc_Track		Global_0	Func_F1
+Map	Record 4		Channel 4 Comp On			Enc_Track		Global_0	Func_F1
+Map	Record 5		Channel 5 Comp On			Enc_Track		Global_0	Func_F1
+Map	Record 6		Channel 6 Comp On			Enc_Track		Global_0	Func_F1
+Map	Record 7		Channel 7 Comp On			Enc_Track		Global_0	Func_F1
+Map	Record 8		Channel 8 Comp On			Enc_Track		Global_0	Func_F1
+
+
+// _____________ F2
+
+Map	LCD Row 2 Channel 1		">GATE"			Enc_Track	Global_0	Func_F2
+Map	LCD Row 2 Channel 2		""			Enc_Track	Global_0	Func_F2
+Map	LCD Row 2 Channel 3		""			Enc_Track	Global_0	Func_F2
+Map	LCD Row 2 Channel 4		""			Enc_Track	Global_0	Func_F2
+Map	LCD Row 2 Channel 5		""			Enc_Track	Global_0	Func_F2
+Map	LCD Row 2 Channel 6		""			Enc_Track	Global_0	Func_F2
+Map	LCD Row 2 Channel 7		""			Enc_Track	Global_0	Func_F2
+Map	LCD Row 2 Channel 8		""			Enc_Track	Global_0	Func_F2
+
+Map	Record 1		Channel 1 Gate On			Enc_Track	Global_0	Func_F2
+Map	Record 2		Channel 2 Gate On			Enc_Track	Global_0	Func_F2
+Map	Record 3		Channel 3 Gate On			Enc_Track	Global_0	Func_F2
+Map	Record 4		Channel 4 Gate On			Enc_Track	Global_0	Func_F2
+Map	Record 5		Channel 5 Gate On			Enc_Track	Global_0	Func_F2
+Map	Record 6		Channel 6 Gate On			Enc_Track	Global_0	Func_F2
+Map	Record 7		Channel 7 Gate On			Enc_Track	Global_0	Func_F2
+Map	Record 8		Channel 8 Gate On			Enc_Track	Global_0	Func_F2
+
+
+
+// _____________ TRACK _____________ BUTTONS _____________ SELECT 
+// _____________ BOTH
+
+Map	LCD Row 1 Channel 1		Channel 1 Channel Name			Enc_Track		Select1	Func_F1
+Map	LCD Row 1 Channel 1		Channel 2 Channel Name			Enc_Track		Select2	Func_F1
+Map	LCD Row 1 Channel 1		Channel 3 Channel Name			Enc_Track		Select3	Func_F1
+Map	LCD Row 1 Channel 1		Channel 4 Channel Name			Enc_Track		Select4	Func_F1
+Map	LCD Row 1 Channel 1		Channel 5 Channel Name			Enc_Track		Select5	Func_F1
+Map	LCD Row 1 Channel 1		Channel 6 Channel Name			Enc_Track		Select6	Func_F1
+Map	LCD Row 1 Channel 1		Channel 7 Channel Name			Enc_Track		Select7	Func_F1
+Map	LCD Row 1 Channel 1		Channel 8 Channel Name			Enc_Track		Select8	Func_F1
+
+Map	LCD Row 1 Channel 2		""			Enc_Track
+
+
+// _____________ F1
+
+Map	LCD Row 2 Channel 1		">Comp"			Enc_Track	Global	Func_F1
+
+Map	Record 1		Channel 1 Comp On			Enc_Track	Select1	Func_F1
+Map	Record 1		Channel 2 Comp On			Enc_Track	Select2	Func_F1
+Map	Record 1		Channel 3 Comp On			Enc_Track	Select3	Func_F1
+Map	Record 1		Channel 4 Comp On			Enc_Track	Select4	Func_F1
+Map	Record 1		Channel 5 Comp On			Enc_Track	Select5	Func_F1
+Map	Record 1		Channel 6 Comp On			Enc_Track	Select6	Func_F1
+Map	Record 1		Channel 7 Comp On			Enc_Track	Select7	Func_F1
+Map	Record 1		Channel 8 Comp On			Enc_Track	Select8	Func_F1
+
+Map	LCD Row 2 Channel 3		"Peak"			Enc_Track	Func_F1
+
+Map	Record 3		Channel 1 C Peak			Enc_Track	Select1	Func_F1
+Map	Record 3		Channel 2 C Peak			Enc_Track	Select2	Func_F1
+Map	Record 3		Channel 3 C Peak			Enc_Track	Select3	Func_F1
+Map	Record 3		Channel 4 C Peak			Enc_Track	Select4	Func_F1
+Map	Record 3		Channel 5 C Peak			Enc_Track	Select5	Func_F1
+Map	Record 3		Channel 6 C Peak			Enc_Track	Select6	Func_F1
+Map	Record 3		Channel 7 C Peak			Enc_Track	Select7	Func_F1
+Map	Record 3		Channel 8 C Peak			Enc_Track	Select8	Func_F1
+
+Map	LCD Row 2 Channel 4		"Fast A"			Enc_Track	Func_F1
+
+Map	Record 4		Channel 1 C Fast Atk			Enc_Track	Select1	Func_F1
+Map	Record 4		Channel 2 C Fast Atk			Enc_Track	Select2	Func_F1
+Map	Record 4		Channel 3 C Fast Atk			Enc_Track	Select3	Func_F1
+Map	Record 4		Channel 4 C Fast Atk			Enc_Track	Select4	Func_F1
+Map	Record 4		Channel 5 C Fast Atk			Enc_Track	Select5	Func_F1
+Map	Record 4		Channel 6 C Fast Atk			Enc_Track	Select6	Func_F1
+Map	Record 4		Channel 7 C Fast Atk			Enc_Track	Select7	Func_F1
+Map	Record 4		Channel 8 C Fast Atk			Enc_Track	Select8	Func_F1
+
+Map	LCD Row 2 Channel 7		"Filt>SC"			Enc_Track	Func_F1
+
+Map	Record 7		Channel 1 Filters Dyn S/C			Enc_Track	Select1	Func_F1
+Map	Record 7		Channel 2 Filters Dyn S/C			Enc_Track	Select2	Func_F1
+Map	Record 7		Channel 3 Filters Dyn S/C			Enc_Track	Select3	Func_F1
+Map	Record 7		Channel 4 Filters Dyn S/C			Enc_Track	Select4	Func_F1
+Map	Record 7		Channel 5 Filters Dyn S/C			Enc_Track	Select5	Func_F1
+Map	Record 7		Channel 6 Filters Dyn S/C			Enc_Track	Select6	Func_F1
+Map	Record 7		Channel 7 Filters Dyn S/C			Enc_Track	Select7	Func_F1
+Map	Record 7		Channel 8 Filters Dyn S/C			Enc_Track	Select8	Func_F1
+
+Map	LCD Row 2 Channel 8		"SC Key"			Enc_Track	Func_F1
+
+Map	Record 8		Channel 1 Key On			Enc_Track	Select1	Func_F1
+Map	Record 8		Channel 2 Key On			Enc_Track	Select2	Func_F1
+Map	Record 8		Channel 3 Key On			Enc_Track	Select3	Func_F1
+Map	Record 8		Channel 4 Key On			Enc_Track	Select4	Func_F1
+Map	Record 8		Channel 5 Key On			Enc_Track	Select5	Func_F1
+Map	Record 8		Channel 6 Key On			Enc_Track	Select6	Func_F1
+Map	Record 8		Channel 7 Key On			Enc_Track	Select7	Func_F1
+Map	Record 8		Channel 8 Key On			Enc_Track	Select8	Func_F1
+
+
+
+// _____________ F2
+
+Map	LCD Row 2 Channel 1		">Gate"			Enc_Track	Func_F2
+
+Map	Record 1		Channel 1 Gate On			Enc_Track	Select1	Func_F2
+Map	Record 1		Channel 2 Gate On			Enc_Track	Select2	Func_F2
+Map	Record 1		Channel 3 Gate On			Enc_Track	Select3	Func_F2
+Map	Record 1		Channel 4 Gate On			Enc_Track	Select4	Func_F2
+Map	Record 1		Channel 5 Gate On			Enc_Track	Select5	Func_F2
+Map	Record 1		Channel 6 Gate On			Enc_Track	Select6	Func_F2
+Map	Record 1		Channel 7 Gate On			Enc_Track	Select7	Func_F2
+Map	Record 1		Channel 8 Gate On			Enc_Track	Select8	Func_F2
+
+Map	LCD Row 2 Channel 3		"Expand"			Enc_Track	Func_F2
+
+Map	Record 3		Channel 1 Expander			Enc_Track	Select1	Func_F2
+Map	Record 3		Channel 2 Expander			Enc_Track	Select2	Func_F2
+Map	Record 3		Channel 3 Expander			Enc_Track	Select3	Func_F2
+Map	Record 3		Channel 4 Expander			Enc_Track	Select4	Func_F2
+Map	Record 3		Channel 5 Expander			Enc_Track	Select5	Func_F2
+Map	Record 3		Channel 6 Expander			Enc_Track	Select6	Func_F2
+Map	Record 3		Channel 7 Expander			Enc_Track	Select7	Func_F2
+Map	Record 3		Channel 8 Expander			Enc_Track	Select8	Func_F2
+
+Map	LCD Row 2 Channel 4		"Fast A"			Enc_Track	Func_F2
+
+Map	Record 4		Channel 1 G Fast Atk			Enc_Track	Select1	Func_F2
+Map	Record 4		Channel 2 G Fast Atk			Enc_Track	Select2	Func_F2
+Map	Record 4		Channel 3 G Fast Atk			Enc_Track	Select3	Func_F2
+Map	Record 4		Channel 4 G Fast Atk			Enc_Track	Select4	Func_F2
+Map	Record 4		Channel 5 G Fast Atk			Enc_Track	Select5	Func_F2
+Map	Record 4		Channel 6 G Fast Atk			Enc_Track	Select6	Func_F2
+Map	Record 4		Channel 7 G Fast Atk			Enc_Track	Select7	Func_F2
+Map	Record 4		Channel 8 G Fast Atk			Enc_Track	Select8	Func_F2
+
+Map	LCD Row 2 Channel 7		"Filt>SC"			Enc_Track	Func_F2
+
+Map	Record 7		Channel 1 Filters Dyn S/C			Enc_Track	Select1	Func_F2
+Map	Record 7		Channel 2 Filters Dyn S/C			Enc_Track	Select2	Func_F2
+Map	Record 7		Channel 3 Filters Dyn S/C			Enc_Track	Select3	Func_F2
+Map	Record 7		Channel 4 Filters Dyn S/C			Enc_Track	Select4	Func_F2
+Map	Record 7		Channel 5 Filters Dyn S/C			Enc_Track	Select5	Func_F2
+Map	Record 7		Channel 6 Filters Dyn S/C			Enc_Track	Select6	Func_F2
+Map	Record 7		Channel 7 Filters Dyn S/C			Enc_Track	Select7	Func_F2
+Map	Record 7		Channel 8 Filters Dyn S/C			Enc_Track	Select8	Func_F2
+
+Map	LCD Row 2 Channel 8		"SC Key"			Enc_Track	Func_F2
+
+Map	Record 8		Channel 1 Key On			Enc_Track	Select1	Func_F2
+Map	Record 8		Channel 2 Key On			Enc_Track	Select2	Func_F2
+Map	Record 8		Channel 3 Key On			Enc_Track	Select3	Func_F2
+Map	Record 8		Channel 4 Key On			Enc_Track	Select4	Func_F2
+Map	Record 8		Channel 5 Key On			Enc_Track	Select5	Func_F2
+Map	Record 8		Channel 6 Key On			Enc_Track	Select6	Func_F2
+Map	Record 8		Channel 7 Key On			Enc_Track	Select7	Func_F2
+Map	Record 8		Channel 8 Key On			Enc_Track	Select8	Func_F2
+
+
+// _____________ TRACK _____________ ROTARIES _____________ MULTI _____________ BOTH
+
+Map	LCD Row 1 Channel 1		Channel 1 Channel Name			Enc_Track	Global_0
+Map	LCD Row 1 Channel 2		Channel 2 Channel Name			Enc_Track	Global_0
+Map	LCD Row 1 Channel 3		Channel 3 Channel Name			Enc_Track	Global_0
+Map	LCD Row 1 Channel 4		Channel 4 Channel Name			Enc_Track	Global_0
+Map	LCD Row 1 Channel 5		Channel 5 Channel Name			Enc_Track	Global_0
+Map	LCD Row 1 Channel 6		Channel 6 Channel Name			Enc_Track	Global_0
+Map	LCD Row 1 Channel 7		Channel 7 Channel Name			Enc_Track	Global_0
+Map	LCD Row 1 Channel 8		Channel 8 Channel Name			Enc_Track	Global_0
+
+
+// _____________ TRACK _____________ ROTARIES _____________ GLOBAL 
+// _____________ F2
+
+// Map	Rotary 1		Channel 1 Gate Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F2
+// Map	Rotary 2		Channel 2 Gate Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F2
+// Map	Rotary 3		Channel 3 Gate Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F2
+// Map	Rotary 4		Channel 4 Gate Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F2
+// Map	Rotary 5		Channel 5 Gate Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F2
+// Map	Rotary 6		Channel 6 Gate Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F2
+// Map	Rotary 7		Channel 7 Gate Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F2
+// Map	Rotary 8		Channel 8 Gate Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F2
+
+Map	Peak Meter 1		Channel 1 Gate Gain Reduction			Enc_Track	Global_0	Func_F2
+Map	Peak Meter 2		Channel 2 Gate Gain Reduction			Enc_Track	Global_0	Func_F2
+Map	Peak Meter 3		Channel 3 Gate Gain Reduction			Enc_Track	Global_0	Func_F2
+Map	Peak Meter 4		Channel 4 Gate Gain Reduction			Enc_Track	Global_0	Func_F2
+Map	Peak Meter 5		Channel 5 Gate Gain Reduction			Enc_Track	Global_0	Func_F2
+Map	Peak Meter 6		Channel 6 Gate Gain Reduction			Enc_Track	Global_0	Func_F2
+Map	Peak Meter 7		Channel 7 Gate Gain Reduction			Enc_Track	Global_0	Func_F2
+Map	Peak Meter 8		Channel 8 Gate Gain Reduction			Enc_Track	Global_0	Func_F2
+
+
+// _____________ F3
+
+// Map	Rotary 1		Channel 1 Comp Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F1
+// Map	Rotary 2		Channel 2 Comp Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F1
+// Map	Rotary 3		Channel 3 Comp Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F1
+// Map	Rotary 4		Channel 4 Comp Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F1
+// Map	Rotary 5		Channel 5 Comp Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F1
+// Map	Rotary 6		Channel 6 Comp Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F1
+// Map	Rotary 7		Channel 7 Comp Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F1
+// Map	Rotary 8		Channel 8 Comp Gain Reduction		MJ Meter	Enc_Track	Global_0	Func_F1
+
+Map	Peak Meter 1		Channel 1 Comp Gain Reduction			Enc_Track	Global_0	Func_F3
+Map	Peak Meter 2		Channel 2 Comp Gain Reduction			Enc_Track	Global_0	Func_F3
+Map	Peak Meter 3		Channel 3 Comp Gain Reduction			Enc_Track	Global_0	Func_F3
+Map	Peak Meter 4		Channel 4 Comp Gain Reduction			Enc_Track	Global_0	Func_F3
+Map	Peak Meter 5		Channel 5 Comp Gain Reduction			Enc_Track	Global_0	Func_F3
+Map	Peak Meter 6		Channel 6 Comp Gain Reduction			Enc_Track	Global_0	Func_F3
+Map	Peak Meter 7		Channel 7 Comp Gain Reduction			Enc_Track	Global_0	Func_F3
+Map	Peak Meter 8		Channel 8 Comp Gain Reduction			Enc_Track	Global_0	Func_F3
+
+
+
+// _____________ TRACK _____________ ROTARIES _____________ SELECT 
+// _____________ BOTH
+
+
+Map	LCD Row 1 Channel 7		"HPF"			Enc_Track
+
+Map	Rotary 7		Channel 1 HPF Frequency		Wrap	Enc_Track	Select1
+Map	Rotary 7		Channel 2 HPF Frequency		Wrap	Enc_Track	Select2
+Map	Rotary 7		Channel 3 HPF Frequency		Wrap	Enc_Track	Select3
+Map	Rotary 7		Channel 4 HPF Frequency		Wrap	Enc_Track	Select4
+Map	Rotary 7		Channel 5 HPF Frequency		Wrap	Enc_Track	Select5
+Map	Rotary 7		Channel 6 HPF Frequency		Wrap	Enc_Track	Select6
+Map	Rotary 7		Channel 7 HPF Frequency		Wrap	Enc_Track	Select7
+Map	Rotary 7		Channel 8 HPF Frequency		Wrap	Enc_Track	Select8
+
+Map	LCD Row 1 Channel 8		"LPF"			Enc_Track
+
+Map	Rotary 8		Channel 1 LPF Frequency		Wrap	Enc_Track	Select1
+Map	Rotary 8		Channel 2 LPF Frequency		Wrap	Enc_Track	Select2
+Map	Rotary 8		Channel 3 LPF Frequency		Wrap	Enc_Track	Select3
+Map	Rotary 8		Channel 4 LPF Frequency		Wrap	Enc_Track	Select4
+Map	Rotary 8		Channel 5 LPF Frequency		Wrap	Enc_Track	Select5
+Map	Rotary 8		Channel 6 LPF Frequency		Wrap	Enc_Track	Select6
+Map	Rotary 8		Channel 7 LPF Frequency		Wrap	Enc_Track	Select7
+Map	Rotary 8		Channel 8 LPF Frequency		Wrap	Enc_Track	Select8
+
+// _____________ F1 - COMPRESSOR
+
+Map	Rotary 1		Channel 1 Comp Gain Reduction		MJ Meter	Enc_Track	Select1	Func_F1
+Map	Rotary 1		Channel 2 Comp Gain Reduction		MJ Meter	Enc_Track	Select2	Func_F1
+Map	Rotary 1		Channel 3 Comp Gain Reduction		MJ Meter	Enc_Track	Select3	Func_F1
+Map	Rotary 1		Channel 4 Comp Gain Reduction		MJ Meter	Enc_Track	Select4	Func_F1
+Map	Rotary 1		Channel 5 Comp Gain Reduction		MJ Meter	Enc_Track	Select5	Func_F1
+Map	Rotary 1		Channel 6 Comp Gain Reduction		MJ Meter	Enc_Track	Select6	Func_F1
+Map	Rotary 1		Channel 7 Comp Gain Reduction		MJ Meter	Enc_Track	Select7	Func_F1
+Map	Rotary 1		Channel 8 Comp Gain Reduction		MJ Meter	Enc_Track	Select8	Func_F1
+
+Map	LCD Row 1 Channel 3		"Ratio"			Enc_Track	Func_F1
+
+Map	Rotary 3		Channel 1 C Ratio		Single Dot	Enc_Track	Select1	Func_F1
+Map	Rotary 3		Channel 1 C Ratio		Single Dot	Enc_Track	Select2	Func_F1
+Map	Rotary 3		Channel 3 C Ratio		Single Dot	Enc_Track	Select3	Func_F1
+Map	Rotary 3		Channel 4 C Ratio		Single Dot	Enc_Track	Select4	Func_F1
+Map	Rotary 3		Channel 5 C Ratio		Single Dot	Enc_Track	Select5	Func_F1
+Map	Rotary 3		Channel 6 C Ratio		Single Dot	Enc_Track	Select6	Func_F1
+Map	Rotary 3		Channel 7 C Ratio		Single Dot	Enc_Track	Select7	Func_F1
+Map	Rotary 3		Channel 1 C Ratio		Single Dot	Enc_Track	Select8	Func_F1
+
+Map	LCD Row 1 Channel 4		"Thres"			Enc_Track	Func_F1
+
+Map	Rotary 4		Channel 1 C Threshold		Single Dot	Enc_Track	Select1	Func_F1
+Map	Rotary 4		Channel 2 C Threshold		Single Dot	Enc_Track	Select2	Func_F1
+Map	Rotary 4		Channel 3 C Threshold		Single Dot	Enc_Track	Select3	Func_F1
+Map	Rotary 4		Channel 4 C Threshold		Single Dot	Enc_Track	Select4	Func_F1
+Map	Rotary 4		Channel 5 C Threshold		Single Dot	Enc_Track	Select5	Func_F1
+Map	Rotary 4		Channel 6 C Threshold		Single Dot	Enc_Track	Select6	Func_F1
+Map	Rotary 4		Channel 7 C Threshold		Single Dot	Enc_Track	Select7	Func_F1
+Map	Rotary 4		Channel 8 C Threshold		Single Dot	Enc_Track	Select8	Func_F1
+
+Map	LCD Row 1 Channel 5		"Release"			Enc_Track	Func_F1
+
+Map	Rotary 5		Channel 1 C Release		Single Dot	Enc_Track	Select1	Func_F1
+Map	Rotary 5		Channel 2 C Release		Single Dot	Enc_Track	Select2	Func_F1
+Map	Rotary 5		Channel 3 C Release		Single Dot	Enc_Track	Select3	Func_F1
+Map	Rotary 5		Channel 4 C Release		Single Dot	Enc_Track	Select4	Func_F1
+Map	Rotary 5		Channel 5 C Release		Single Dot	Enc_Track	Select5	Func_F1
+Map	Rotary 5		Channel 6 C Release		Single Dot	Enc_Track	Select6	Func_F1
+Map	Rotary 5		Channel 7 C Release		Single Dot	Enc_Track	Select7	Func_F1
+Map	Rotary 5		Channel 8 C Release		Single Dot	Enc_Track	Select8	Func_F1
+
+// _____________ F2 - GATE
+
+Map	Rotary 1		Channel 1 Gate Gain Reduction		MJ Meter	Enc_Track	Select1	Func_F2
+Map	Rotary 1		Channel 2 Gate Gain Reduction		MJ Meter	Enc_Track	Select2	Func_F2
+Map	Rotary 1		Channel 3 Gate Gain Reduction		MJ Meter	Enc_Track	Select3	Func_F2
+Map	Rotary 1		Channel 4 Gate Gain Reduction		MJ Meter	Enc_Track	Select4	Func_F2
+Map	Rotary 1		Channel 5 Gate Gain Reduction		MJ Meter	Enc_Track	Select5	Func_F2
+Map	Rotary 1		Channel 6 Gate Gain Reduction		MJ Meter	Enc_Track	Select6	Func_F2
+Map	Rotary 1		Channel 7 Gate Gain Reduction		MJ Meter	Enc_Track	Select7	Func_F2
+Map	Rotary 1		Channel 8 Gate Gain Reduction		MJ Meter	Enc_Track	Select8	Func_F2
+
+Map	LCD Row 1 Channel 3		"Range"			Enc_Track	Func_F2
+
+Map	Rotary 3		Channel 1 G Range		Single Dot	Enc_Track	Select1	Func_F2
+Map	Rotary 3		Channel 2 G Range		Single Dot	Enc_Track	Select2	Func_F2
+Map	Rotary 3		Channel 3 G Range		Single Dot	Enc_Track	Select3	Func_F2
+Map	Rotary 3		Channel 4 G Range		Single Dot	Enc_Track	Select4	Func_F2
+Map	Rotary 3		Channel 5 G Range		Single Dot	Enc_Track	Select5	Func_F2
+Map	Rotary 3		Channel 6 G Range		Single Dot	Enc_Track	Select6	Func_F2
+Map	Rotary 3		Channel 7 G Range		Single Dot	Enc_Track	Select7	Func_F2
+Map	Rotary 3		Channel 8 G Range		Single Dot	Enc_Track	Select8	Func_F2
+
+Map	LCD Row 1 Channel 4		"Thres"			Enc_Track	Func_F2
+
+Map	Rotary 4		Channel 1 G Threshold		Single Dot	Enc_Track	Select1	Func_F2
+Map	Rotary 4		Channel 2 G Threshold		Single Dot	Enc_Track	Select2	Func_F2
+Map	Rotary 4		Channel 3 G Threshold		Single Dot	Enc_Track	Select3	Func_F2
+Map	Rotary 4		Channel 4 G Threshold		Single Dot	Enc_Track	Select4	Func_F2
+Map	Rotary 4		Channel 5 G Threshold		Single Dot	Enc_Track	Select5	Func_F2
+Map	Rotary 4		Channel 6 G Threshold		Single Dot	Enc_Track	Select6	Func_F2
+Map	Rotary 4		Channel 7 G Threshold		Single Dot	Enc_Track	Select7	Func_F2
+Map	Rotary 4		Channel 8 G Threshold		Single Dot	Enc_Track	Select8	Func_F2
+
+Map	LCD Row 1 Channel 5		"Release"			Enc_Track	Func_F2
+
+Map	Rotary 5		Channel 1 G Release		Single Dot	Enc_Track	Select1	Func_F2
+Map	Rotary 5		Channel 2 G Release		Single Dot	Enc_Track	Select2	Func_F2
+Map	Rotary 5		Channel 3 G Release		Single Dot	Enc_Track	Select3	Func_F2
+Map	Rotary 5		Channel 4 G Release		Single Dot	Enc_Track	Select4	Func_F2
+Map	Rotary 5		Channel 5 G Release		Single Dot	Enc_Track	Select5	Func_F2
+Map	Rotary 5		Channel 6 G Release		Single Dot	Enc_Track	Select6	Func_F2
+Map	Rotary 5		Channel 7 G Release		Single Dot	Enc_Track	Select7	Func_F2
+Map	Rotary 5		Channel 8 G Release		Single Dot	Enc_Track	Select8	Func_F2
+
+Map	LCD Row 1 Channel 6		"Hold"			Enc_Track	Func_F2
+
+Map	Rotary 6		Channel 1 G Hold		Single Dot	Enc_Track	Select1	Func_F2
+Map	Rotary 6		Channel 2 G Hold		Single Dot	Enc_Track	Select2	Func_F2
+Map	Rotary 6		Channel 3 G Hold		Single Dot	Enc_Track	Select3	Func_F2
+Map	Rotary 6		Channel 4 G Hold		Single Dot	Enc_Track	Select4	Func_F2
+Map	Rotary 6		Channel 5 G Hold		Single Dot	Enc_Track	Select5	Func_F2
+Map	Rotary 6		Channel 6 G Hold		Single Dot	Enc_Track	Select6	Func_F2
+Map	Rotary 6		Channel 7 G Hold		Single Dot	Enc_Track	Select7	Func_F2
+Map	Rotary 6		Channel 8 G Hold		Single Dot	Enc_Track	Select8	Func_F2
+
+
+// ____________ TRACK ____________ ROTARY BUTTONS 
+// ____________ BOTH
+
+Map	Rotary Button 7		Channel 1 HPF On			Enc_Track	Select1
+Map	Rotary Button 7		Channel 2 HPF On			Enc_Track	Select2
+Map	Rotary Button 7		Channel 3 HPF On			Enc_Track	Select3
+Map	Rotary Button 7		Channel 4 HPF On			Enc_Track	Select4
+Map	Rotary Button 7		Channel 5 HPF On			Enc_Track	Select5
+Map	Rotary Button 7		Channel 6 HPF On			Enc_Track	Select6
+Map	Rotary Button 7		Channel 7 HPF On			Enc_Track	Select7
+Map	Rotary Button 7		Channel 8 HPF On			Enc_Track	Select8
+
+Map	Rotary Button 8		Channel 1 LPF On			Enc_Track	Select1
+Map	Rotary Button 8		Channel 2 LPF On			Enc_Track	Select2
+Map	Rotary Button 8		Channel 3 LPF On			Enc_Track	Select3
+Map	Rotary Button 8		Channel 4 LPF On			Enc_Track	Select4
+Map	Rotary Button 8		Channel 5 LPF On			Enc_Track	Select5
+Map	Rotary Button 8		Channel 6 LPF On			Enc_Track	Select6
+Map	Rotary Button 8		Channel 7 LPF On			Enc_Track	Select7
+Map	Rotary Button 8		Channel 8 LPF On			Enc_Track	Select8
+
+
+
+// _____________ PAN _____________ BUTTONS _____________ GLOBAL
+// _____________ BOTH
+
+Map	LCD Row 1 Channel 1		Channel 1 Channel Name			Enc_Pan	Global_0
+Map	LCD Row 1 Channel 2		Channel 2 Channel Name			Enc_Pan	Global_0
+Map	LCD Row 1 Channel 3		Channel 3 Channel Name			Enc_Pan	Global_0
+Map	LCD Row 1 Channel 4		Channel 4 Channel Name			Enc_Pan	Global_0
+Map	LCD Row 1 Channel 5		Channel 5 Channel Name			Enc_Pan	Global_0
+Map	LCD Row 1 Channel 6		Channel 6 Channel Name			Enc_Pan	Global_0
+Map	LCD Row 1 Channel 7		Channel 7 Channel Name			Enc_Pan	Global_0
+Map	LCD Row 1 Channel 8		Channel 8 Channel Name			Enc_Pan	Global_0
+
+// _____________ F1
+
+Map	LCD Row 2 Channel 1		">PAN"			Enc_Pan	Global_0	Func_F1
+Map	LCD Row 2 Channel 2		""			Enc_Pan	Global_0	Func_F1
+Map	LCD Row 2 Channel 3		""			Enc_Pan	Global_0	Func_F1
+Map	LCD Row 2 Channel 4		""			Enc_Pan	Global_0	Func_F1
+Map	LCD Row 2 Channel 5		""			Enc_Pan	Global_0	Func_F1
+Map	LCD Row 2 Channel 6		""			Enc_Pan	Global_0	Func_F1
+Map	LCD Row 2 Channel 7		""			Enc_Pan	Global_0	Func_F1
+Map	LCD Row 2 Channel 8		""			Enc_Pan	Global_0	Func_F1
+
+Map	Rotary 1		Channel 1 Pan		Single Dot	Enc_Pan	Global_0	Func_F1
+Map	Rotary 2		Channel 2 Pan		Single Dot	Enc_Pan	Global_0	Func_F1
+Map	Rotary 3		Channel 3 Pan		Single Dot	Enc_Pan	Global_0	Func_F1
+Map	Rotary 4		Channel 4 Pan		Single Dot	Enc_Pan	Global_0	Func_F1
+Map	Rotary 5		Channel 5 Pan		Single Dot	Enc_Pan	Global_0	Func_F1
+Map	Rotary 6		Channel 6 Pan		Single Dot	Enc_Pan	Global_0	Func_F1
+Map	Rotary 7		Channel 7 Pan		Single Dot	Enc_Pan	Global_0	Func_F1
+Map	Rotary 8		Channel 8 Pan		Single Dot	Enc_Pan	Global_0	Func_F1
+
+// _____________ F2
+
+Map	LCD Row 1 Channel 1		Channel 1 Channel Name			Enc_Pan	Global_0	Func_F2
+Map	LCD Row 1 Channel 2		Channel 2 Channel Name			Enc_Pan	Global_0	Func_F2
+Map	LCD Row 1 Channel 3		Channel 3 Channel Name			Enc_Pan	Global_0	Func_F2
+Map	LCD Row 1 Channel 4		Channel 4 Channel Name			Enc_Pan	Global_0	Func_F2
+Map	LCD Row 1 Channel 5		Channel 5 Channel Name			Enc_Pan	Global_0	Func_F2
+Map	LCD Row 1 Channel 6		Channel 6 Channel Name			Enc_Pan	Global_0	Func_F2
+Map	LCD Row 1 Channel 7		Channel 7 Channel Name			Enc_Pan	Global_0	Func_F2
+Map	LCD Row 1 Channel 8		Channel 8 Channel Name			Enc_Pan	Global_0	Func_F2
+
+Map	LCD Row 2 Channel 1		">WIDTH"			Enc_Pan	Global_0	Func_F2
+Map	LCD Row 2 Channel 2		""			Enc_Pan	Global_0	Func_F2
+Map	LCD Row 2 Channel 3		""			Enc_Pan	Global_0	Func_F2
+Map	LCD Row 2 Channel 4		""			Enc_Pan	Global_0	Func_F2
+Map	LCD Row 2 Channel 5		""			Enc_Pan	Global_0	Func_F2
+Map	LCD Row 2 Channel 6		""			Enc_Pan	Global_0	Func_F2
+Map	LCD Row 2 Channel 7		""			Enc_Pan	Global_0	Func_F2
+Map	LCD Row 2 Channel 8		""			Enc_Pan	Global_0	Func_F2
+
+Map	Rotary 1		Channel 1 Width		Spread	Enc_Pan	Global_0	Func_F2
+Map	Rotary 2		Channel 2 Width		Spread	Enc_Pan	Global_0	Func_F2
+Map	Rotary 3		Channel 3 Width		Spread	Enc_Pan	Global_0	Func_F2
+Map	Rotary 4		Channel 4 Width		Spread	Enc_Pan	Global_0	Func_F2
+Map	Rotary 5		Channel 5 Width		Spread	Enc_Pan	Global_0	Func_F2
+Map	Rotary 6		Channel 6 Width		Spread	Enc_Pan	Global_0	Func_F2
+Map	Rotary 7		Channel 7 Width		Spread	Enc_Pan	Global_0	Func_F2
+Map	Rotary 8		Channel 8 Width		Spread	Enc_Pan	Global_0	Func_F2
+
+// _____________ F3-8 BLANK
+
+Map	LCD Row 2 Channel 1		""			Enc_Pan	Global_0	Func_F3
+Map	LCD Row 2 Channel 1		""			Enc_Pan	Global_0	Func_F4
+Map	LCD Row 2 Channel 1		""			Enc_Pan	Global_0	Func_F5
+Map	LCD Row 2 Channel 1		""			Enc_Pan	Global_0	Func_F6
+Map	LCD Row 2 Channel 1		""			Enc_Pan	Global_0	Func_F7
+Map	LCD Row 2 Channel 1		""			Enc_Pan	Global_0	Func_F8
+
+
+// _____________ PAN _____________ BUTTONS 
+// _____________ BOTH
+
+Map	LCD Row 1 Channel 1		Channel 1 Channel Name			Enc_Pan		Select1
+Map	LCD Row 1 Channel 1		Channel 2 Channel Name			Enc_Pan		Select2
+Map	LCD Row 1 Channel 1		Channel 3 Channel Name			Enc_Pan		Select3
+Map	LCD Row 1 Channel 1		Channel 4 Channel Name			Enc_Pan		Select4
+Map	LCD Row 1 Channel 1		Channel 5 Channel Name			Enc_Pan		Select5
+Map	LCD Row 1 Channel 1		Channel 6 Channel Name			Enc_Pan		Select6
+Map	LCD Row 1 Channel 1		Channel 7 Channel Name			Enc_Pan		Select7
+Map	LCD Row 1 Channel 1		Channel 8 Channel Name			Enc_Pan		Select8
+Map	LCD Row 1 Channel 2		""			Enc_Pan
+Map	LCD Row 2 Channel 1		">Pan"			Enc_Pan
+
+Map	LCD Row 1 Channel 3		"Pan"			Enc_Pan
+
+Map	Rotary 3		Channel 1 Pan		Boost/Cut	Enc_Pan		Select1
+Map	Rotary 3		Channel 2 Pan		Boost/Cut	Enc_Pan		Select2
+Map	Rotary 3		Channel 3 Pan		Boost/Cut	Enc_Pan		Select3
+Map	Rotary 3		Channel 4 Pan		Boost/Cut	Enc_Pan		Select4
+Map	Rotary 3		Channel 5 Pan		Boost/Cut	Enc_Pan		Select5
+Map	Rotary 3		Channel 6 Pan		Boost/Cut	Enc_Pan		Select6
+Map	Rotary 3		Channel 7 Pan		Boost/Cut	Enc_Pan		Select7
+Map	Rotary 3		Channel 8 Pan		Boost/Cut	Enc_Pan		Select8
+
+Map	LCD Row 1 Channel 4		"Width"			Enc_Pan
+
+Map	Rotary 4		Channel 1 Width		Spread	Enc_Pan		Select1
+Map	Rotary 4		Channel 2 Width		Spread	Enc_Pan		Select2
+Map	Rotary 4		Channel 3 Width		Spread	Enc_Pan		Select3
+Map	Rotary 4		Channel 4 Width		Spread	Enc_Pan		Select4
+Map	Rotary 4		Channel 5 Width		Spread	Enc_Pan		Select5
+Map	Rotary 4		Channel 6 Width		Spread	Enc_Pan		Select6
+Map	Rotary 4		Channel 7 Width		Spread	Enc_Pan		Select7
+Map	Rotary 4		Channel 8 Width		Spread	Enc_Pan		Select8
+
+// Map	LCD Row 1 Channel 5		""			Enc_Pan
+// Map	LCD Row 1 Channel 6		""			Enc_Pan
+// Map	LCD Row 1 Channel 7		""			Enc_Pan
+// Map	LCD Row 1 Channel 8		""			Enc_Pan
+// 
+// Map	LCD Row 2 Channel 1		""			Enc_Pan
+
+
+
+// _____________ PAN _____________ MULTI 
+// _____________ BOTH
+
+Map	LCD Row 1 Channel 1		Channel 1 Channel Name			Enc_EQ	Global_0
+Map	LCD Row 1 Channel 2		Channel 2 Channel Name			Enc_EQ	Global_0
+Map	LCD Row 1 Channel 3		Channel 3 Channel Name			Enc_EQ	Global_0
+Map	LCD Row 1 Channel 4		Channel 4 Channel Name			Enc_EQ	Global_0
+Map	LCD Row 1 Channel 5		Channel 5 Channel Name			Enc_EQ	Global_0
+Map	LCD Row 1 Channel 6		Channel 6 Channel Name			Enc_EQ	Global_0
+Map	LCD Row 1 Channel 7		Channel 7 Channel Name			Enc_EQ	Global_0
+Map	LCD Row 1 Channel 8		Channel 8 Channel Name			Enc_EQ	Global_0
+
+Map	LCD Row 2 Channel 2		""			Enc_EQ	Global_0
+Map	LCD Row 2 Channel 3		""			Enc_EQ	Global_0
+Map	LCD Row 2 Channel 4		""			Enc_EQ	Global_0
+Map	LCD Row 2 Channel 5		""			Enc_EQ	Global_0
+Map	LCD Row 2 Channel 6		""			Enc_EQ	Global_0
+Map	LCD Row 2 Channel 7		""			Enc_EQ	Global_0
+Map	LCD Row 2 Channel 8		""			Enc_EQ	Global_0
+
+Map	Record 1		Channel 1 EQ On			Enc_EQ	Global_0
+Map	Record 2		Channel 2 EQ On			Enc_EQ	Global_0
+Map	Record 3		Channel 3 EQ On			Enc_EQ	Global_0
+Map	Record 4		Channel 4 EQ On			Enc_EQ	Global_0
+Map	Record 5		Channel 5 EQ On			Enc_EQ	Global_0
+Map	Record 6		Channel 6 EQ On			Enc_EQ	Global_0
+Map	Record 7		Channel 7 EQ On			Enc_EQ	Global_0
+Map	Record 8		Channel 8 EQ On			Enc_EQ	Global_0
+
+
+// _____________ EQ _____________ MULTI _____________ GLOBAL
+// _____________ F1
+
+Map	LCD Row 2 Channel 1		">EQ"			Enc_EQ	Global_0	Func_F1
+
+// NO ROTARIES MAPPED
+
+
+// _____________ EQ _____________ MULTI _____________ GLOBAL
+// _____________ F2
+
+
+Map	LCD Row 2 Channel 1		">GAIN"			Enc_EQ	Global_0	Func_F2
+
+Map	Rotary 1		Channel 1 Input Gain		Single Dot	Enc_EQ	Global_0	Func_F2
+Map	Rotary 2		Channel 2 Input Gain		Single Dot	Enc_EQ	Global_0	Func_F2
+Map	Rotary 3		Channel 3 Input Gain		Single Dot	Enc_EQ	Global_0	Func_F2
+Map	Rotary 4		Channel 4 Input Gain		Single Dot	Enc_EQ	Global_0	Func_F2
+Map	Rotary 5		Channel 5 Input Gain		Single Dot	Enc_EQ	Global_0	Func_F2
+Map	Rotary 6		Channel 6 Input Gain		Single Dot	Enc_EQ	Global_0	Func_F2
+Map	Rotary 7		Channel 7 Input Gain		Single Dot	Enc_EQ	Global_0	Func_F2
+Map	Rotary 8		Channel 8 Input Gain		Single Dot	Enc_EQ	Global_0	Func_F2
+
+// _____________ F3-8 BLANK
+
+Map	LCD Row 2 Channel 1		""			Enc_EQ	Global_0	Func_F3
+Map	LCD Row 2 Channel 1		""			Enc_EQ	Global_0	Func_F4
+Map	LCD Row 2 Channel 1		""			Enc_EQ	Global_0	Func_F5
+Map	LCD Row 2 Channel 1		""			Enc_EQ	Global_0	Func_F6
+Map	LCD Row 2 Channel 1		""			Enc_EQ	Global_0	Func_F7
+Map	LCD Row 2 Channel 1		""			Enc_EQ	Global_0	Func_F8
+
+// Map	LCD Row 2 Channel 1		""			Enc_EQ	Select1
+// Map	LCD Row 2 Channel 1		""			Enc_EQ	Select2
+// Map	LCD Row 2 Channel 1		""			Enc_EQ	Select3
+Map	LCD Row 2 Channel 1		""			Enc_EQ	Select4
+Map	LCD Row 2 Channel 1		""			Enc_EQ	Select5
+Map	LCD Row 2 Channel 1		""			Enc_EQ	Select6
+Map	LCD Row 2 Channel 1		""			Enc_EQ	Select7
+Map	LCD Row 2 Channel 1		""			Enc_EQ	Select8
+
+
+// _____________ EQ _____________ ROTARIES _____________ SELECT
+// _____________ BOTH
+
+Map	LCD Row 2 Channel 1		">EQ"			Enc_EQ
+
+Map	LCD Row 1 Channel 1		Channel 1 Channel Name			Enc_EQ		Select1
+Map	LCD Row 1 Channel 1		Channel 2 Channel Name			Enc_EQ		Select2
+Map	LCD Row 1 Channel 1		Channel 3 Channel Name			Enc_EQ		Select3
+Map	LCD Row 1 Channel 1		Channel 4 Channel Name			Enc_EQ		Select4
+Map	LCD Row 1 Channel 1		Channel 5 Channel Name			Enc_EQ		Select5
+Map	LCD Row 1 Channel 1		Channel 6 Channel Name			Enc_EQ		Select6
+Map	LCD Row 1 Channel 1		Channel 7 Channel Name			Enc_EQ		Select7
+Map	LCD Row 1 Channel 1		Channel 8 Channel Name			Enc_EQ		Select8
+
+Map	LCD Row 1 Channel 2		"Gain"			Enc_EQ	
+
+Map	Rotary 2		Channel 1 Input Gain		Boost/Cut	Enc_EQ	Select1	
+Map	Rotary 2		Channel 2 Input Gain		Boost/Cut	Enc_EQ	Select2	
+Map	Rotary 2		Channel 3 Input Gain		Boost/Cut	Enc_EQ	Select3	
+Map	Rotary 2		Channel 4 Input Gain		Boost/Cut	Enc_EQ	Select4	
+Map	Rotary 2		Channel 5 Input Gain		Boost/Cut	Enc_EQ	Select5	
+Map	Rotary 2		Channel 6 Input Gain		Boost/Cut	Enc_EQ	Select6	
+Map	Rotary 2		Channel 7 Input Gain		Boost/Cut	Enc_EQ	Select7	
+Map	Rotary 2		Channel 8 Input Gain		Boost/Cut	Enc_EQ	Select8	
+
+// _____________ EQ _____________ ROTARIES 
+// _____________ F1
+
+Map	LCD Row 2 Channel 1		">EQ"			Enc_EQ	Func_F1
+
+Map	LCD Row 1 Channel 3		"HPF"			Enc_EQ	Func_F1
+
+Map	Rotary 3		Channel 1 HPF Frequency		Single Dot	Enc_EQ	Select1	Func_F1
+Map	Rotary 3		Channel 2 HPF Frequency		Single Dot	Enc_EQ	Select2	Func_F1
+Map	Rotary 3		Channel 3 HPF Frequency		Single Dot	Enc_EQ	Select3	Func_F1
+Map	Rotary 3		Channel 4 HPF Frequency		Single Dot	Enc_EQ	Select4	Func_F1
+Map	Rotary 3		Channel 5 HPF Frequency		Single Dot	Enc_EQ	Select5	Func_F1
+Map	Rotary 3		Channel 6 HPF Frequency		Single Dot	Enc_EQ	Select6	Func_F1
+Map	Rotary 3		Channel 7 HPF Frequency		Single Dot	Enc_EQ	Select7	Func_F1
+Map	Rotary 3		Channel 8 HPF Frequency		Single Dot	Enc_EQ	Select8	Func_F1
+
+Map	LCD Row 1 Channel 4		"L Gain"			Enc_EQ	Func_F1
+
+Map	Rotary 4		Channel 1 LF Gain		Boost/Cut	Enc_EQ	Select1	Func_F1
+Map	Rotary 4		Channel 2 LF Gain		Boost/Cut	Enc_EQ	Select2	Func_F1
+Map	Rotary 4		Channel 3 LF Gain		Boost/Cut	Enc_EQ	Select3	Func_F1
+Map	Rotary 4		Channel 4 LF Gain		Boost/Cut	Enc_EQ	Select4	Func_F1
+Map	Rotary 4		Channel 5 LF Gain		Boost/Cut	Enc_EQ	Select5	Func_F1
+Map	Rotary 4		Channel 6 LF Gain		Boost/Cut	Enc_EQ	Select6	Func_F1
+Map	Rotary 4		Channel 7 LF Gain		Boost/Cut	Enc_EQ	Select7	Func_F1
+Map	Rotary 4		Channel 8 LF Gain		Boost/Cut	Enc_EQ	Select8	Func_F1
+
+Map	LCD Row 1 Channel 5		"LM Gain"			Enc_EQ	Func_F1
+
+Map	Rotary 5		Channel 1 LMF Gain		Boost/Cut	Enc_EQ	Select1	Func_F1
+Map	Rotary 5		Channel 2 LMF Gain		Boost/Cut	Enc_EQ	Select2	Func_F1
+Map	Rotary 5		Channel 3 LMF Gain		Boost/Cut	Enc_EQ	Select3	Func_F1
+Map	Rotary 5		Channel 4 LMF Gain		Boost/Cut	Enc_EQ	Select4	Func_F1
+Map	Rotary 5		Channel 5 LMF Gain		Boost/Cut	Enc_EQ	Select5	Func_F1
+Map	Rotary 5		Channel 6 LMF Gain		Boost/Cut	Enc_EQ	Select6	Func_F1
+Map	Rotary 5		Channel 7 LMF Gain		Boost/Cut	Enc_EQ	Select7	Func_F1
+Map	Rotary 5		Channel 8 LMF Gain		Boost/Cut	Enc_EQ	Select8	Func_F1
+
+Map	LCD Row 1 Channel 6		"HM Gain"			Enc_EQ	Func_F1
+
+Map	Rotary 6		Channel 1 HMF Gain		Boost/Cut	Enc_EQ	Select1	Func_F1
+Map	Rotary 6		Channel 2 HMF Gain		Boost/Cut	Enc_EQ	Select2	Func_F1
+Map	Rotary 6		Channel 3 HMF Gain		Boost/Cut	Enc_EQ	Select3	Func_F1
+Map	Rotary 6		Channel 4 HMF Gain		Boost/Cut	Enc_EQ	Select4	Func_F1
+Map	Rotary 6		Channel 5 HMF Gain		Boost/Cut	Enc_EQ	Select5	Func_F1
+Map	Rotary 6		Channel 6 HMF Gain		Boost/Cut	Enc_EQ	Select6	Func_F1
+Map	Rotary 6		Channel 7 HMF Gain		Boost/Cut	Enc_EQ	Select7	Func_F1
+Map	Rotary 6		Channel 8 HMF Gain		Boost/Cut	Enc_EQ	Select8	Func_F1
+
+Map	LCD Row 1 Channel 7		"H Gain"			Enc_EQ	Func_F1
+
+Map	Rotary 7		Channel 1 HF Gain		Boost/Cut	Enc_EQ	Select1	Func_F1
+Map	Rotary 7		Channel 2 HF Gain		Boost/Cut	Enc_EQ	Select2	Func_F1
+Map	Rotary 7		Channel 3 HF Gain		Boost/Cut	Enc_EQ	Select3	Func_F1
+Map	Rotary 7		Channel 4 HF Gain		Boost/Cut	Enc_EQ	Select4	Func_F1
+Map	Rotary 7		Channel 5 HF Gain		Boost/Cut	Enc_EQ	Select5	Func_F1
+Map	Rotary 7		Channel 6 HF Gain		Boost/Cut	Enc_EQ	Select6	Func_F1
+Map	Rotary 7		Channel 7 HF Gain		Boost/Cut	Enc_EQ	Select7	Func_F1
+Map	Rotary 7		Channel 8 HF Gain		Boost/Cut	Enc_EQ	Select8	Func_F1
+
+Map	LCD Row 1 Channel 8		"LPF"			Enc_EQ	Func_F1
+
+Map	Rotary 8		Channel 1 LPF Frequency		Single Dot	Enc_EQ	Select1	Func_F1
+Map	Rotary 8		Channel 2 LPF Frequency		Single Dot	Enc_EQ	Select2	Func_F1
+Map	Rotary 8		Channel 3 LPF Frequency		Single Dot	Enc_EQ	Select3	Func_F1
+Map	Rotary 8		Channel 4 LPF Frequency		Single Dot	Enc_EQ	Select4	Func_F1
+Map	Rotary 8		Channel 5 LPF Frequency		Single Dot	Enc_EQ	Select5	Func_F1
+Map	Rotary 8		Channel 6 LPF Frequenc		Single Dot	Enc_EQ	Select6	Func_F1
+Map	Rotary 8		Channel 7 LPF Frequency		Single Dot	Enc_EQ	Select7	Func_F1
+Map	Rotary 8		Channel 8 LPF Frequency		Single Dot	Enc_EQ	Select8	Func_F1
+
+
+// _____________ EQ _____________ ROTARIES 
+// _____________ F2
+
+Map	LCD Row 2 Channel 1		">Freq"			Enc_EQ	Func_F2
+
+Map	LCD Row 1 Channel 3		"HPF"			Enc_EQ	Func_F2
+
+Map	Rotary 3		Channel 1 HPF Frequency		Single Dot	Enc_EQ	Select1	Func_F2
+Map	Rotary 3		Channel 2 HPF Frequency		Single Dot	Enc_EQ	Select2	Func_F2
+Map	Rotary 3		Channel 3 HPF Frequency		Single Dot	Enc_EQ	Select3	Func_F2
+Map	Rotary 3		Channel 4 HPF Frequency		Single Dot	Enc_EQ	Select4	Func_F2
+Map	Rotary 3		Channel 5 HPF Frequency		Single Dot	Enc_EQ	Select5	Func_F2
+Map	Rotary 3		Channel 6 HPF Frequency		Single Dot	Enc_EQ	Select6	Func_F2
+Map	Rotary 3		Channel 7 HPF Frequency		Single Dot	Enc_EQ	Select7	Func_F2
+Map	Rotary 3		Channel 8 HPF Frequency		Single Dot	Enc_EQ	Select8	Func_F2
+
+Map	LCD Row 1 Channel 4		"L Freq"			Enc_EQ	Func_F2
+
+Map	Rotary 4		Channel 1 LF Frequency		Single Dot	Enc_EQ	Select1	Func_F2
+Map	Rotary 4		Channel 2 LF Frequency		Single Dot	Enc_EQ	Select2	Func_F2
+Map	Rotary 4		Channel 3 LF Frequency		Single Dot	Enc_EQ	Select3	Func_F2
+Map	Rotary 4		Channel 4 LF Frequency		Single Dot	Enc_EQ	Select4	Func_F2
+Map	Rotary 4		Channel 5 LF Frequency		Single Dot	Enc_EQ	Select5	Func_F2
+Map	Rotary 4		Channel 6 LF Frequency		Single Dot	Enc_EQ	Select6	Func_F2
+Map	Rotary 4		Channel 7 LF Frequency		Single Dot	Enc_EQ	Select7	Func_F2
+Map	Rotary 4		Channel 8 LF Frequency		Single Dot	Enc_EQ	Select8	Func_F2
+
+Map	LCD Row 1 Channel 5		"LM Freq"			Enc_EQ	Func_F2
+
+Map	Rotary 5		Channel 1 LMF Frequency		Single Dot	Enc_EQ	Select1	Func_F2
+Map	Rotary 5		Channel 2 LMF Frequency		Single Dot	Enc_EQ	Select2	Func_F2
+Map	Rotary 5		Channel 3 LMF Frequency		Single Dot	Enc_EQ	Select3	Func_F2
+Map	Rotary 5		Channel 4 LMF Frequency		Single Dot	Enc_EQ	Select4	Func_F2
+Map	Rotary 5		Channel 5 LMF Frequency		Single Dot	Enc_EQ	Select5	Func_F2
+Map	Rotary 5		Channel 6 LMF Frequency		Single Dot	Enc_EQ	Select6	Func_F2
+Map	Rotary 5		Channel 7 LMF Frequency		Single Dot	Enc_EQ	Select7	Func_F2
+Map	Rotary 5		Channel 8 LMF Frequency		Single Dot	Enc_EQ	Select8	Func_F2
+
+Map	LCD Row 1 Channel 6		"HM Freq"			Enc_EQ	Func_F2
+
+Map	Rotary 6		Channel 1 HMF Frequency		Single Dot	Enc_EQ	Select1	Func_F2
+Map	Rotary 6		Channel 2 HMF Frequency		Single Dot	Enc_EQ	Select2	Func_F2
+Map	Rotary 6		Channel 3 HMF Frequency		Single Dot	Enc_EQ	Select3	Func_F2
+Map	Rotary 6		Channel 4 HMF Frequency		Single Dot	Enc_EQ	Select4	Func_F2
+Map	Rotary 6		Channel 5 HMF Frequency		Single Dot	Enc_EQ	Select5	Func_F2
+Map	Rotary 6		Channel 6 HMF Frequency		Single Dot	Enc_EQ	Select6	Func_F2
+Map	Rotary 6		Channel 7 HMF Frequency		Single Dot	Enc_EQ	Select7	Func_F2
+Map	Rotary 6		Channel 8 HMF Frequency		Single Dot	Enc_EQ	Select8	Func_F2
+
+Map	LCD Row 1 Channel 7		"H Freq"			Enc_EQ	Func_F2
+
+Map	Rotary 7		Channel 1 HF Frequency		Single Dot	Enc_EQ	Select1	Func_F2
+Map	Rotary 7		Channel 2 HF Frequency		Single Dot	Enc_EQ	Select2	Func_F2
+Map	Rotary 7		Channel 3 HF Frequency		Single Dot	Enc_EQ	Select3	Func_F2
+Map	Rotary 7		Channel 4 HF Frequency		Single Dot	Enc_EQ	Select4	Func_F2
+Map	Rotary 7		Channel 5 HF Frequency		Single Dot	Enc_EQ	Select5	Func_F2
+Map	Rotary 7		Channel 6 HF Frequency		Single Dot	Enc_EQ	Select6	Func_F2
+Map	Rotary 7		Channel 7 HF Frequency		Single Dot	Enc_EQ	Select7	Func_F2
+Map	Rotary 7		Channel 8 HF Frequency		Single Dot	Enc_EQ	Select8	Func_F2
+
+Map	LCD Row 1 Channel 8		"LPF"			Enc_EQ	Func_F2
+
+Map	Rotary 8		Channel 1 LPF Frequency		Single Dot	Enc_EQ	Select1	Func_F2
+Map	Rotary 8		Channel 2 LPF Frequency		Single Dot	Enc_EQ	Select2	Func_F2
+Map	Rotary 8		Channel 3 LPF Frequency		Single Dot	Enc_EQ	Select3	Func_F2
+Map	Rotary 8		Channel 4 LPF Frequency		Single Dot	Enc_EQ	Select4	Func_F2
+Map	Rotary 8		Channel 5 LPF Frequency		Single Dot	Enc_EQ	Select5	Func_F2
+Map	Rotary 8		Channel 6 LPF Frequency		Single Dot	Enc_EQ	Select6	Func_F2
+Map	Rotary 8		Channel 7 LPF Frequency		Single Dot	Enc_EQ	Select7	Func_F2
+Map	Rotary 8		Channel 8 LPF Frequency		Single Dot	Enc_EQ	Select8	Func_F2
+
+
+// _____________ EQ _____________ ROTARIES 
+// _____________ F3
+
+Map	LCD Row 2 Channel 1		">Width"			Enc_EQ	Func_F3
+
+Map	LCD Row 1 Channel 3		"HPF"			Enc_EQ	Func_F3
+
+Map	Rotary 3		Channel 1 HPF Frequency		Single Dot	Enc_EQ	Select1	Func_F3
+Map	Rotary 3		Channel 2 HPF Frequency		Single Dot	Enc_EQ	Select2	Func_F3
+Map	Rotary 3		Channel 3 HPF Frequency		Single Dot	Enc_EQ	Select3	Func_F3
+Map	Rotary 3		Channel 4 HPF Frequency		Single Dot	Enc_EQ	Select4	Func_F3
+Map	Rotary 3		Channel 5 HPF Frequency		Single Dot	Enc_EQ	Select5	Func_F3
+Map	Rotary 3		Channel 6 HPF Frequency		Single Dot	Enc_EQ	Select6	Func_F3
+Map	Rotary 3		Channel 7 HPF Frequency		Single Dot	Enc_EQ	Select7	Func_F3
+Map	Rotary 3		Channel 8 HPF Frequency		Single Dot	Enc_EQ	Select8	Func_F3
+
+Map	LCD Row 1 Channel 4		"L Freq"			Enc_EQ	Func_F3
+
+Map	Rotary 4		Channel 1 LF Frequency		Single Dot	Enc_EQ	Select1	Func_F3
+Map	Rotary 4		Channel 2 LF Frequency		Single Dot	Enc_EQ	Select2	Func_F3
+Map	Rotary 4		Channel 3 LF Frequency		Single Dot	Enc_EQ	Select3	Func_F3
+Map	Rotary 4		Channel 4 LF Frequency		Single Dot	Enc_EQ	Select4	Func_F3
+Map	Rotary 4		Channel 5 LF Frequency		Single Dot	Enc_EQ	Select5	Func_F3
+Map	Rotary 4		Channel 6 LF Frequency		Single Dot	Enc_EQ	Select6	Func_F3
+Map	Rotary 4		Channel 7 LF Frequency		Single Dot	Enc_EQ	Select7	Func_F3
+Map	Rotary 4		Channel 8 LF Frequency		Single Dot	Enc_EQ	Select8	Func_F3
+
+Map	LCD Row 1 Channel 5		"LM Q"			Enc_EQ	Func_F3
+
+Map	Rotary 5		Channel 1 LMF Q		Single Dot	Enc_EQ	Select1	Func_F3
+Map	Rotary 5		Channel 2 LMF Q		Single Dot	Enc_EQ	Select2	Func_F3
+Map	Rotary 5		Channel 3 LMF Q		Single Dot	Enc_EQ	Select3	Func_F3
+Map	Rotary 5		Channel 4 LMF Q		Single Dot	Enc_EQ	Select4	Func_F3
+Map	Rotary 5		Channel 5 LMF Q		Single Dot	Enc_EQ	Select5	Func_F3
+Map	Rotary 5		Channel 6 LMF Q		Single Dot	Enc_EQ	Select6	Func_F3
+Map	Rotary 5		Channel 7 LMF Q		Single Dot	Enc_EQ	Select7	Func_F3
+Map	Rotary 5		Channel 8 LMF Q		Single Dot	Enc_EQ	Select8	Func_F3
+
+Map	LCD Row 1 Channel 6		"HM Q"			Enc_EQ	Func_F3
+
+Map	Rotary 6		Channel 1 HMF Q		Single Dot	Enc_EQ	Select1	Func_F3
+Map	Rotary 6		Channel 2 HMF Q		Single Dot	Enc_EQ	Select2	Func_F3
+Map	Rotary 6		Channel 3 HMF Q		Single Dot	Enc_EQ	Select3	Func_F3
+Map	Rotary 6		Channel 4 HMF Q		Single Dot	Enc_EQ	Select4	Func_F3
+Map	Rotary 6		Channel 5 HMF Q		Single Dot	Enc_EQ	Select5	Func_F3
+Map	Rotary 6		Channel 6 HMF Q		Single Dot	Enc_EQ	Select6	Func_F3
+Map	Rotary 6		Channel 7 HMF Q		Single Dot	Enc_EQ	Select7	Func_F3
+Map	Rotary 6		Channel 8 HMF Q		Single Dot	Enc_EQ	Select8	Func_F3
+
+Map	LCD Row 1 Channel 7		"H Freq"			Enc_EQ	Func_F3
+
+Map	Rotary 7		Channel 1 HF Frequency		Single Dot	Enc_EQ	Select1	Func_F3
+Map	Rotary 7		Channel 2 HF Frequency		Single Dot	Enc_EQ	Select2	Func_F3
+Map	Rotary 7		Channel 3 HF Frequency		Single Dot	Enc_EQ	Select3	Func_F3
+Map	Rotary 7		Channel 4 HF Frequency		Single Dot	Enc_EQ	Select4	Func_F3
+Map	Rotary 7		Channel 5 HF Frequency		Single Dot	Enc_EQ	Select5	Func_F3
+Map	Rotary 7		Channel 6 HF Frequency		Single Dot	Enc_EQ	Select6	Func_F3
+Map	Rotary 7		Channel 7 HF Frequency		Single Dot	Enc_EQ	Select7	Func_F3
+Map	Rotary 7		Channel 8 HF Frequency		Single Dot	Enc_EQ	Select8	Func_F3
+
+Map	LCD Row 1 Channel 8		"LPF"			Enc_EQ	Func_F3
+
+Map	Rotary 8		Channel 1 LPF Frequency		Single Dot	Enc_EQ	Select1	Func_F3
+Map	Rotary 8		Channel 2 LPF Frequency		Single Dot	Enc_EQ	Select2	Func_F3
+Map	Rotary 8		Channel 3 LPF Frequency		Single Dot	Enc_EQ	Select3	Func_F3
+Map	Rotary 8		Channel 4 LPF Frequency		Single Dot	Enc_EQ	Select4	Func_F3
+Map	Rotary 8		Channel 5 LPF Frequency		Single Dot	Enc_EQ	Select5	Func_F3
+Map	Rotary 8		Channel 6 LPF Frequency		Single Dot	Enc_EQ	Select6	Func_F3
+Map	Rotary 8		Channel 7 LPF Frequency		Single Dot	Enc_EQ	Select7	Func_F3
+Map	Rotary 8		Channel 8 LPF Frequency		Single Dot	Enc_EQ	Select8	Func_F3
+
+// _____________ EQ _____________ FADERS 
+// _____________ F2
+
+Map	Fader 1		0			Enc_EQ	Select1	Func_F2
+Map	Fader 2		0			Enc_EQ	Select1	Func_F2
+Map	Fader 3		0			Enc_EQ	Select1	Func_F2
+Map	Fader 4		Channel 1 LF Gain			Enc_EQ	Select1	Func_F2
+Map	Fader 5		Channel 1 LMF Gain			Enc_EQ	Select1	Func_F2
+Map	Fader 6		Channel 1 HMF Gain			Enc_EQ	Select1	Func_F2
+Map	Fader 7		Channel 1 HF Gain			Enc_EQ	Select1	Func_F2
+Map	Fader 8		0			Enc_EQ	Select1	Func_F2
+
+Map	Peak Meter 1		Channel 1 VU Meter			Enc_EQ	Select1	Func_F2
+Map	Peak Meter 2		0			Enc_EQ	Select1	Func_F2
+Map	Peak Meter 3		0			Enc_EQ	Select1	Func_F2
+Map	Peak Meter 4		0			Enc_EQ	Select1	Func_F2
+Map	Peak Meter 5		0			Enc_EQ	Select1	Func_F2
+Map	Peak Meter 6		0			Enc_EQ	Select1	Func_F2
+Map	Peak Meter 7		0			Enc_EQ	Select1	Func_F2
+Map	Peak Meter 8		0			Enc_EQ	Select1	Func_F2
+
+Map	Fader 1		0			Enc_EQ	Select2	Func_F2
+Map	Fader 2		0			Enc_EQ	Select2	Func_F2
+Map	Fader 3		0			Enc_EQ	Select2	Func_F2
+Map	Fader 4		Channel 2 LF Gain			Enc_EQ	Select2	Func_F2
+Map	Fader 5		Channel 2 LMF Gain			Enc_EQ	Select2	Func_F2
+Map	Fader 6		Channel 2 HMF Gain			Enc_EQ	Select2	Func_F2
+Map	Fader 7		Channel 2 HF Gain			Enc_EQ	Select2	Func_F2
+Map	Fader 8		0			Enc_EQ	Select2	Func_F2
+
+Map	Peak Meter 1		Channel 2 VU Meter			Enc_EQ	Select2	Func_F2
+Map	Peak Meter 2		0			Enc_EQ	Select2	Func_F2
+Map	Peak Meter 3		0			Enc_EQ	Select2	Func_F2
+Map	Peak Meter 4		0			Enc_EQ	Select2	Func_F2
+Map	Peak Meter 5		0			Enc_EQ	Select2	Func_F2
+Map	Peak Meter 6		0			Enc_EQ	Select2	Func_F2
+Map	Peak Meter 7		0			Enc_EQ	Select2	Func_F2
+Map	Peak Meter 8		0			Enc_EQ	Select2	Func_F2
+
+Map	Fader 1		0			Enc_EQ	Select3	Func_F2
+Map	Fader 2		0			Enc_EQ	Select3	Func_F2
+Map	Fader 3		0			Enc_EQ	Select3	Func_F2
+Map	Fader 4		Channel 3 LF Gain			Enc_EQ	Select3	Func_F2
+Map	Fader 5		Channel 3 LMF Gain			Enc_EQ	Select3	Func_F2
+Map	Fader 6		Channel 3 HMF Gain			Enc_EQ	Select3	Func_F2
+Map	Fader 7		Channel 3 HF Gain			Enc_EQ	Select3	Func_F2
+Map	Fader 8		0			Enc_EQ	Select3	Func_F2
+
+Map	Peak Meter 1		Channel 3 VU Meter			Enc_EQ	Select3	Func_F2
+Map	Peak Meter 2		0			Enc_EQ	Select3	Func_F2
+Map	Peak Meter 3		0			Enc_EQ	Select3	Func_F2
+Map	Peak Meter 4		0			Enc_EQ	Select3	Func_F2
+Map	Peak Meter 5		0			Enc_EQ	Select3	Func_F2
+Map	Peak Meter 6		0			Enc_EQ	Select3	Func_F2
+Map	Peak Meter 7		0			Enc_EQ	Select3	Func_F2
+Map	Peak Meter 8		0			Enc_EQ	Select3	Func_F2
+
+Map	Fader 1		0			Enc_EQ	Select4	Func_F2
+Map	Fader 2		0			Enc_EQ	Select4	Func_F2
+Map	Fader 3		0			Enc_EQ	Select4	Func_F2
+Map	Fader 4		Channel 4 LF Gain			Enc_EQ	Select4	Func_F2
+Map	Fader 5		Channel 4 LMF Gain			Enc_EQ	Select4	Func_F2
+Map	Fader 6		Channel 4 HMF Gain			Enc_EQ	Select4	Func_F2
+Map	Fader 7		Channel 4 HF Gain			Enc_EQ	Select4	Func_F2
+Map	Fader 8		0			Enc_EQ	Select4	Func_F2
+
+Map	Peak Meter 1		Channel 4 VU Meter			Enc_EQ	Select4	Func_F2
+Map	Peak Meter 2		0			Enc_EQ	Select4	Func_F2
+Map	Peak Meter 3		0			Enc_EQ	Select4	Func_F2
+Map	Peak Meter 4		0			Enc_EQ	Select4	Func_F2
+Map	Peak Meter 5		0			Enc_EQ	Select4	Func_F2
+Map	Peak Meter 6		0			Enc_EQ	Select4	Func_F2
+Map	Peak Meter 7		0			Enc_EQ	Select4	Func_F2
+Map	Peak Meter 8		0			Enc_EQ	Select4	Func_F2
+
+Map	Fader 1		0			Enc_EQ	Select5	Func_F2
+Map	Fader 2		0			Enc_EQ	Select5	Func_F2
+Map	Fader 3		0			Enc_EQ	Select5	Func_F2
+Map	Fader 4		Channel 5 LF Gain			Enc_EQ	Select5	Func_F2
+Map	Fader 5		Channel 5 LMF Gain			Enc_EQ	Select5	Func_F2
+Map	Fader 6		Channel 5 HMF Gain			Enc_EQ	Select5	Func_F2
+Map	Fader 7		Channel 5 HF Gain			Enc_EQ	Select5	Func_F2
+Map	Fader 8		0			Enc_EQ	Select5	Func_F2
+
+Map	Peak Meter 1		Channel 5 VU Meter			Enc_EQ	Select5	Func_F2
+Map	Peak Meter 2		0			Enc_EQ	Select5	Func_F2
+Map	Peak Meter 3		0			Enc_EQ	Select5	Func_F2
+Map	Peak Meter 4		0			Enc_EQ	Select5	Func_F2
+Map	Peak Meter 5		0			Enc_EQ	Select5	Func_F2
+Map	Peak Meter 6		0			Enc_EQ	Select5	Func_F2
+Map	Peak Meter 7		0			Enc_EQ	Select5	Func_F2
+Map	Peak Meter 8		0			Enc_EQ	Select5	Func_F2
+
+Map	Fader 1		0			Enc_EQ	Select6	Func_F2
+Map	Fader 2		0			Enc_EQ	Select6	Func_F2
+Map	Fader 3		0			Enc_EQ	Select6	Func_F2
+Map	Fader 4		Channel 6 LF Gain			Enc_EQ	Select6	Func_F2
+Map	Fader 5		Channel 6 LMF Gain			Enc_EQ	Select6	Func_F2
+Map	Fader 6		Channel 6 HMF Gain			Enc_EQ	Select6	Func_F2
+Map	Fader 7		Channel 6 HF Gain			Enc_EQ	Select6	Func_F2
+Map	Fader 8		0			Enc_EQ	Select6	Func_F2
+
+Map	Peak Meter 1		Channel 6 VU Meter			Enc_EQ	Select6	Func_F2
+Map	Peak Meter 2		0			Enc_EQ	Select6	Func_F2
+Map	Peak Meter 3		0			Enc_EQ	Select6	Func_F2
+Map	Peak Meter 4		0			Enc_EQ	Select6	Func_F2
+Map	Peak Meter 5		0			Enc_EQ	Select6	Func_F2
+Map	Peak Meter 6		0			Enc_EQ	Select6	Func_F2
+Map	Peak Meter 7		0			Enc_EQ	Select6	Func_F2
+Map	Peak Meter 8		0			Enc_EQ	Select6	Func_F2
+
+Map	Fader 1		0			Enc_EQ	Select7	Func_F2
+Map	Fader 2		0			Enc_EQ	Select7	Func_F2
+Map	Fader 3		0			Enc_EQ	Select7	Func_F2
+Map	Fader 4		Channel 7 LF Gain			Enc_EQ	Select7	Func_F2
+Map	Fader 5		Channel 7 LMF Gain			Enc_EQ	Select7	Func_F2
+Map	Fader 6		Channel 7 HMF Gain			Enc_EQ	Select7	Func_F2
+Map	Fader 7		Channel 7 HF Gain			Enc_EQ	Select7	Func_F2
+Map	Fader 8		0			Enc_EQ	Select7	Func_F2
+
+Map	Peak Meter 1		Channel 7 VU Meter			Enc_EQ	Select7	Func_F2
+Map	Peak Meter 2		0			Enc_EQ	Select7	Func_F2
+Map	Peak Meter 3		0			Enc_EQ	Select7	Func_F2
+Map	Peak Meter 4		0			Enc_EQ	Select7	Func_F2
+Map	Peak Meter 5		0			Enc_EQ	Select7	Func_F2
+Map	Peak Meter 6		0			Enc_EQ	Select7	Func_F2
+Map	Peak Meter 7		0			Enc_EQ	Select7	Func_F2
+Map	Peak Meter 8		0			Enc_EQ	Select7	Func_F2
+
+Map	Fader 1		0			Enc_EQ	Select8	Func_F2
+Map	Fader 2		0			Enc_EQ	Select8	Func_F2
+Map	Fader 3		0			Enc_EQ	Select8	Func_F2
+Map	Fader 4		Channel 8 LF Gain			Enc_EQ	Select8	Func_F2
+Map	Fader 5		Channel 8 LMF Gain			Enc_EQ	Select8	Func_F2
+Map	Fader 6		Channel 8 HMF Gain			Enc_EQ	Select8	Func_F2
+Map	Fader 7		Channel 8 HF Gain			Enc_EQ	Select8	Func_F2
+Map	Fader 8		0			Enc_EQ	Select8	Func_F2
+
+Map	Peak Meter 1		Channel 8 VU Meter			Enc_EQ	Select8	Func_F2
+Map	Peak Meter 2		0			Enc_EQ	Select8	Func_F2
+Map	Peak Meter 3		0			Enc_EQ	Select8	Func_F2
+Map	Peak Meter 4		0			Enc_EQ	Select8	Func_F2
+Map	Peak Meter 5		0			Enc_EQ	Select8	Func_F2
+Map	Peak Meter 6		0			Enc_EQ	Select8	Func_F2
+Map	Peak Meter 7		0			Enc_EQ	Select8	Func_F2
+Map	Peak Meter 8		0			Enc_EQ	Select8	Func_F2
+
+// _____________ EQ _____________ FADERS 
+// _____________ F3
+
+Map	Fader 1		0			Enc_EQ	Select1	Func_F3
+Map	Fader 2		0			Enc_EQ	Select1	Func_F3
+Map	Fader 3		0			Enc_EQ	Select1	Func_F3
+Map	Fader 4		Channel 1 LF Gain			Enc_EQ	Select1	Func_F3
+Map	Fader 5		Channel 1 LMF Gain			Enc_EQ	Select1	Func_F3
+Map	Fader 6		Channel 1 HMF Gain			Enc_EQ	Select1	Func_F3
+Map	Fader 7		Channel 1 HF Gain			Enc_EQ	Select1	Func_F3
+Map	Fader 8		0			Enc_EQ	Select1	Func_F3
+
+Map	Peak Meter 1		Channel 1 VU Meter			Enc_EQ	Select1	Func_F3
+Map	Peak Meter 2		0			Enc_EQ	Select1	Func_F3
+Map	Peak Meter 3		0			Enc_EQ	Select1	Func_F3
+Map	Peak Meter 4		0			Enc_EQ	Select1	Func_F3
+Map	Peak Meter 5		0			Enc_EQ	Select1	Func_F3
+Map	Peak Meter 6		0			Enc_EQ	Select1	Func_F3
+Map	Peak Meter 7		0			Enc_EQ	Select1	Func_F3
+Map	Peak Meter 8		0			Enc_EQ	Select1	Func_F3
+
+Map	Fader 1		0			Enc_EQ	Select2	Func_F3
+Map	Fader 2		0			Enc_EQ	Select2	Func_F3
+Map	Fader 3		0			Enc_EQ	Select2	Func_F3
+Map	Fader 4		Channel 2 LF Gain			Enc_EQ	Select2	Func_F3
+Map	Fader 5		Channel 2 LMF Gain			Enc_EQ	Select2	Func_F3
+Map	Fader 6		Channel 2 HMF Gain			Enc_EQ	Select2	Func_F3
+Map	Fader 7		Channel 2 HF Gain			Enc_EQ	Select2	Func_F3
+Map	Fader 8		0			Enc_EQ	Select2	Func_F3
+
+Map	Peak Meter 1		Channel 2 VU Meter			Enc_EQ	Select2	Func_F3
+Map	Peak Meter 2		0			Enc_EQ	Select2	Func_F3
+Map	Peak Meter 3		0			Enc_EQ	Select2	Func_F3
+Map	Peak Meter 4		0			Enc_EQ	Select2	Func_F3
+Map	Peak Meter 5		0			Enc_EQ	Select2	Func_F3
+Map	Peak Meter 6		0			Enc_EQ	Select2	Func_F3
+Map	Peak Meter 7		0			Enc_EQ	Select2	Func_F3
+Map	Peak Meter 8		0			Enc_EQ	Select2	Func_F3
+
+Map	Fader 1		0			Enc_EQ	Select3	Func_F3
+Map	Fader 2		0			Enc_EQ	Select3	Func_F3
+Map	Fader 3		0			Enc_EQ	Select3	Func_F3
+Map	Fader 4		Channel 3 LF Gain			Enc_EQ	Select3	Func_F3
+Map	Fader 5		Channel 3 LMF Gain			Enc_EQ	Select3	Func_F3
+Map	Fader 6		Channel 3 HMF Gain			Enc_EQ	Select3	Func_F3
+Map	Fader 7		Channel 3 HF Gain			Enc_EQ	Select3	Func_F3
+Map	Fader 8		0			Enc_EQ	Select3	Func_F3
+
+Map	Peak Meter 1		Channel 3 VU Meter			Enc_EQ	Select3	Func_F3
+Map	Peak Meter 2		0			Enc_EQ	Select3	Func_F3
+Map	Peak Meter 3		0			Enc_EQ	Select3	Func_F3
+Map	Peak Meter 4		0			Enc_EQ	Select3	Func_F3
+Map	Peak Meter 5		0			Enc_EQ	Select3	Func_F3
+Map	Peak Meter 6		0			Enc_EQ	Select3	Func_F3
+Map	Peak Meter 7		0			Enc_EQ	Select3	Func_F3
+Map	Peak Meter 8		0			Enc_EQ	Select3	Func_F3
+
+Map	Fader 1		0			Enc_EQ	Select4	Func_F3
+Map	Fader 2		0			Enc_EQ	Select4	Func_F3
+Map	Fader 3		0			Enc_EQ	Select4	Func_F3
+Map	Fader 4		Channel 4 LF Gain			Enc_EQ	Select4	Func_F3
+Map	Fader 5		Channel 4 LMF Gain			Enc_EQ	Select4	Func_F3
+Map	Fader 6		Channel 4 HMF Gain			Enc_EQ	Select4	Func_F3
+Map	Fader 7		Channel 4 HF Gain			Enc_EQ	Select4	Func_F3
+Map	Fader 8		0			Enc_EQ	Select4	Func_F3
+
+Map	Peak Meter 1		Channel 4 VU Meter			Enc_EQ	Select4	Func_F3
+Map	Peak Meter 2		0			Enc_EQ	Select4	Func_F3
+Map	Peak Meter 3		0			Enc_EQ	Select4	Func_F3
+Map	Peak Meter 4		0			Enc_EQ	Select4	Func_F3
+Map	Peak Meter 5		0			Enc_EQ	Select4	Func_F3
+Map	Peak Meter 6		0			Enc_EQ	Select4	Func_F3
+Map	Peak Meter 7		0			Enc_EQ	Select4	Func_F3
+Map	Peak Meter 8		0			Enc_EQ	Select4	Func_F3
+
+Map	Fader 1		0			Enc_EQ	Select5	Func_F3
+Map	Fader 2		0			Enc_EQ	Select5	Func_F3
+Map	Fader 3		0			Enc_EQ	Select5	Func_F3
+Map	Fader 4		Channel 5 LF Gain			Enc_EQ	Select5	Func_F3
+Map	Fader 5		Channel 5 LMF Gain			Enc_EQ	Select5	Func_F3
+Map	Fader 6		Channel 5 HMF Gain			Enc_EQ	Select5	Func_F3
+Map	Fader 7		Channel 5 HF Gain			Enc_EQ	Select5	Func_F3
+Map	Fader 8		0			Enc_EQ	Select5	Func_F3
+
+Map	Peak Meter 1		Channel 5 VU Meter			Enc_EQ	Select5	Func_F3
+Map	Peak Meter 2		0			Enc_EQ	Select5	Func_F3
+Map	Peak Meter 3		0			Enc_EQ	Select5	Func_F3
+Map	Peak Meter 4		0			Enc_EQ	Select5	Func_F3
+Map	Peak Meter 5		0			Enc_EQ	Select5	Func_F3
+Map	Peak Meter 6		0			Enc_EQ	Select5	Func_F3
+Map	Peak Meter 7		0			Enc_EQ	Select5	Func_F3
+Map	Peak Meter 8		0			Enc_EQ	Select5	Func_F3
+
+Map	Fader 1		0			Enc_EQ	Select6	Func_F3
+Map	Fader 2		0			Enc_EQ	Select6	Func_F3
+Map	Fader 3		0			Enc_EQ	Select6	Func_F3
+Map	Fader 4		Channel 6 LF Gain			Enc_EQ	Select6	Func_F3
+Map	Fader 5		Channel 6 LMF Gain			Enc_EQ	Select6	Func_F3
+Map	Fader 6		Channel 6 HMF Gain			Enc_EQ	Select6	Func_F3
+Map	Fader 7		Channel 6 HF Gain			Enc_EQ	Select6	Func_F3
+Map	Fader 8		0			Enc_EQ	Select6	Func_F3
+
+Map	Peak Meter 1		Channel 6 VU Meter			Enc_EQ	Select6	Func_F3
+Map	Peak Meter 2		0			Enc_EQ	Select6	Func_F3
+Map	Peak Meter 3		0			Enc_EQ	Select6	Func_F3
+Map	Peak Meter 4		0			Enc_EQ	Select6	Func_F3
+Map	Peak Meter 5		0			Enc_EQ	Select6	Func_F3
+Map	Peak Meter 6		0			Enc_EQ	Select6	Func_F3
+Map	Peak Meter 7		0			Enc_EQ	Select6	Func_F3
+Map	Peak Meter 8		0			Enc_EQ	Select6	Func_F3
+
+Map	Fader 1		0			Enc_EQ	Select7	Func_F3
+Map	Fader 2		0			Enc_EQ	Select7	Func_F3
+Map	Fader 3		0			Enc_EQ	Select7	Func_F3
+Map	Fader 4		Channel 7 LF Gain			Enc_EQ	Select7	Func_F3
+Map	Fader 5		Channel 7 LMF Gain			Enc_EQ	Select7	Func_F3
+Map	Fader 6		Channel 7 HMF Gain			Enc_EQ	Select7	Func_F3
+Map	Fader 7		Channel 7 HF Gain			Enc_EQ	Select7	Func_F3
+Map	Fader 8		0			Enc_EQ	Select7	Func_F3
+
+Map	Peak Meter 1		Channel 7 VU Meter			Enc_EQ	Select7	Func_F3
+Map	Peak Meter 2		0			Enc_EQ	Select7	Func_F3
+Map	Peak Meter 3		0			Enc_EQ	Select7	Func_F3
+Map	Peak Meter 4		0			Enc_EQ	Select7	Func_F3
+Map	Peak Meter 5		0			Enc_EQ	Select7	Func_F3
+Map	Peak Meter 6		0			Enc_EQ	Select7	Func_F3
+Map	Peak Meter 7		0			Enc_EQ	Select7	Func_F3
+Map	Peak Meter 8		0			Enc_EQ	Select7	Func_F3
+
+Map	Fader 1		0			Enc_EQ	Select8	Func_F3
+Map	Fader 2		0			Enc_EQ	Select8	Func_F3
+Map	Fader 3		0			Enc_EQ	Select8	Func_F3
+Map	Fader 4		Channel 8 LF Gain			Enc_EQ	Select8	Func_F3
+Map	Fader 5		Channel 8 LMF Gain			Enc_EQ	Select8	Func_F3
+Map	Fader 6		Channel 8 HMF Gain			Enc_EQ	Select8	Func_F3
+Map	Fader 7		Channel 8 HF Gain			Enc_EQ	Select8	Func_F3
+Map	Fader 8		0			Enc_EQ	Select8	Func_F3
+
+Map	Peak Meter 1		Channel 8 VU Meter			Enc_EQ	Select8	Func_F3
+Map	Peak Meter 2		0			Enc_EQ	Select8	Func_F3
+Map	Peak Meter 3		0			Enc_EQ	Select8	Func_F3
+Map	Peak Meter 4		0			Enc_EQ	Select8	Func_F3
+Map	Peak Meter 5		0			Enc_EQ	Select8	Func_F3
+Map	Peak Meter 6		0			Enc_EQ	Select8	Func_F3
+Map	Peak Meter 7		0			Enc_EQ	Select8	Func_F3
+Map	Peak Meter 8		0			Enc_EQ	Select8	Func_F3
+
+
+// _____________ EQ _____________ BUTTONS 
+// _____________ BOTH
+
+
+Map	Record 1		Channel 1 EQ On			Enc_EQ	Select1
+Map	Record 1		Channel 2 EQ On			Enc_EQ	Select2
+Map	Record 1		Channel 3 EQ On			Enc_EQ	Select3
+Map	Record 1		Channel 4 EQ On			Enc_EQ	Select4
+Map	Record 1		Channel 5 EQ On			Enc_EQ	Select5
+Map	Record 1		Channel 6 EQ On			Enc_EQ	Select6
+Map	Record 1		Channel 7 EQ On			Enc_EQ	Select7
+Map	Record 1		Channel 8 EQ On			Enc_EQ	Select8
+
+Map	LCD Row 2 Channel 2		""			Enc_EQ
+
+Map	LCD Row 2 Channel 3		"On"			Enc_EQ
+
+Map	Record 3		Channel 1 HPF On			Enc_EQ	Select1	
+Map	Record 3		Channel 2 HPF On			Enc_EQ	Select2	
+Map	Record 3		Channel 3 HPF On			Enc_EQ	Select3	
+Map	Record 3		Channel 4 HPF On			Enc_EQ	Select4	
+Map	Record 3		Channel 5 HPF On			Enc_EQ	Select5	
+Map	Record 3		Channel 6 HPF On			Enc_EQ	Select6	
+Map	Record 3		Channel 7 HPF On			Enc_EQ	Select7	
+Map	Record 3		Channel 8 HPF On			Enc_EQ	Select8	
+
+Map	LCD Row 2 Channel 4		"Bell"			Enc_EQ
+
+Map	Record 4		Channel 1 LF Bell			Enc_EQ	Select1
+Map	Record 4		Channel 2 LF Bell			Enc_EQ	Select2
+Map	Record 4		Channel 3 LF Bell			Enc_EQ	Select3
+Map	Record 4		Channel 4 LF Bell			Enc_EQ	Select4
+Map	Record 4		Channel 5 LF Bell			Enc_EQ	Select5
+Map	Record 4		Channel 6 LF Bell			Enc_EQ	Select6
+Map	Record 4		Channel 7 LF Bell			Enc_EQ	Select7
+Map	Record 4		Channel 8 LF Bell			Enc_EQ	Select8
+
+Map	LCD Row 2 Channel 6		"E Mode"			Enc_EQ
+
+Map	Record 6		Channel 1 EQ E Mode			Enc_EQ	Select1
+Map	Record 6		Channel 2 EQ E Mode			Enc_EQ	Select2
+Map	Record 6		Channel 3 EQ E Mode			Enc_EQ	Select3
+Map	Record 6		Channel 4 EQ E Mode			Enc_EQ	Select4
+Map	Record 6		Channel 5 EQ E Mode			Enc_EQ	Select5
+Map	Record 6		Channel 6 EQ E Mode			Enc_EQ	Select6
+Map	Record 6		Channel 7 EQ E Mode			Enc_EQ	Select7
+Map	Record 6		Channel 8 EQ E Mode			Enc_EQ	Select8
+
+Map	LCD Row 2 Channel 7		"Bell"			Enc_EQ
+
+Map	Record 7		Channel 1 HF Bell			Enc_EQ	Select1
+Map	Record 7		Channel 2 HF Bell			Enc_EQ	Select2
+Map	Record 7		Channel 3 HF Bell			Enc_EQ	Select3
+Map	Record 7		Channel 4 HF Bell			Enc_EQ	Select4
+Map	Record 7		Channel 5 HF Bell			Enc_EQ	Select5
+Map	Record 7		Channel 6 HF Bell			Enc_EQ	Select6
+Map	Record 7		Channel 7 HF Bell			Enc_EQ	Select7
+Map	Record 7		Channel 8 HF Bell			Enc_EQ	Select8
+
+Map	LCD Row 2 Channel 8		"On"			Enc_EQ	
+
+Map	Record 8		Channel 1 LPF On			Enc_EQ	Select1	
+Map	Record 8		Channel 2 LPF On			Enc_EQ	Select2	
+Map	Record 8		Channel 3 LPF On			Enc_EQ	Select3	
+Map	Record 8		Channel 4 LPF On			Enc_EQ	Select4	
+Map	Record 8		Channel 5 LPF On			Enc_EQ	Select5	
+Map	Record 8		Channel 6 LPF On			Enc_EQ	Select6	
+Map	Record 8		Channel 7 LPF On			Enc_EQ	Select7	
+Map	Record 8		Channel 8 LPF On			Enc_EQ	Select8	
+
+
+
+// _____________ SEND _____________ MULTI _____________ BOTH
+
+Map	LCD Row 2 Channel 3		""			Enc_Send	Global_0
+Map	LCD Row 2 Channel 4		""			Enc_Send	Global_0
+Map	LCD Row 2 Channel 5		""			Enc_Send	Global_0
+Map	LCD Row 2 Channel 6		""			Enc_Send	Global_0
+Map	LCD Row 2 Channel 7		""			Enc_Send	Global_0
+Map	LCD Row 2 Channel 8		""			Enc_Send	Global_0
+
+
+// _____________ SEND _____________ MULTI _____________ GLOBAL
+
+Map	LCD Row 1 Channel 1		Channel 1 Channel Name			Enc_Send	Global_0
+Map	LCD Row 1 Channel 2		Channel 2 Channel Name			Enc_Send	Global_0
+Map	LCD Row 1 Channel 3		Channel 3 Channel Name			Enc_Send	Global_0
+Map	LCD Row 1 Channel 4		Channel 4 Channel Name			Enc_Send	Global_0
+Map	LCD Row 1 Channel 5		Channel 5 Channel Name			Enc_Send	Global_0
+Map	LCD Row 1 Channel 6		Channel 6 Channel Name			Enc_Send	Global_0
+Map	LCD Row 1 Channel 7		Channel 7 Channel Name			Enc_Send	Global_0
+Map	LCD Row 1 Channel 8		Channel 8 Channel Name			Enc_Send	Global_0
+
+
+// ________ SEND ________ ROTARY ________ GLOBAL
+// ________ BOTH
+
+Map	LCD Row 1 Channel 1		FX1 Name			Enc_Send	
+Map	LCD Row 1 Channel 2		FX2 Name			Enc_Send
+Map	LCD Row 1 Channel 3		FX3 Name			Enc_Send
+Map	LCD Row 1 Channel 4		FX4 Name			Enc_Send
+Map	LCD Row 1 Channel 5		FX5 Name			Enc_Send
+Map	LCD Row 1 Channel 6		FX6 Name			Enc_Send
+Map	LCD Row 1 Channel 7		FX7 Name			Enc_Send
+Map	LCD Row 1 Channel 8		FX8 Name			Enc_Send
+
+Map	Rotary 1		Channel 1 FX1 Send Level		Single Dot	Enc_Send	Select1
+Map	Rotary 2		Channel 1 FX2 Send Level		Single Dot	Enc_Send	Select1
+Map	Rotary 3		Channel 1 FX3 Send Level		Single Dot	Enc_Send	Select1
+Map	Rotary 4		Channel 1 FX4 Send Level		Single Dot	Enc_Send	Select1
+Map	Rotary 5		Channel 1 FX5 Send Level		Single Dot	Enc_Send	Select1
+Map	Rotary 6		Channel 1 FX6 Send Level		Single Dot	Enc_Send	Select1
+Map	Rotary 7		Channel 1 FX7 Send Level		Single Dot	Enc_Send	Select1
+Map	Rotary 8		Channel 1 FX8 Send Level		Single Dot	Enc_Send	Select1
+
+Map	Rotary 1		Channel 2 FX1 Send Level		Single Dot	Enc_Send	Select2
+Map	Rotary 2		Channel 2 FX2 Send Level		Single Dot	Enc_Send	Select2
+Map	Rotary 3		Channel 2 FX3 Send Level		Single Dot	Enc_Send	Select2
+Map	Rotary 4		Channel 2 FX4 Send Level		Single Dot	Enc_Send	Select2
+Map	Rotary 5		Channel 2 FX5 Send Level		Single Dot	Enc_Send	Select2
+Map	Rotary 6		Channel 2 FX6 Send Level		Single Dot	Enc_Send	Select2
+Map	Rotary 7		Channel 2 FX7 Send Level		Single Dot	Enc_Send	Select2
+Map	Rotary 8		Channel 2 FX8 Send Level		Single Dot	Enc_Send	Select2
+
+Map	Rotary 1		Channel 3 FX1 Send Level		Single Dot	Enc_Send	Select3
+Map	Rotary 2		Channel 3 FX2 Send Level		Single Dot	Enc_Send	Select3
+Map	Rotary 3		Channel 3 FX3 Send Level		Single Dot	Enc_Send	Select3
+Map	Rotary 4		Channel 3 FX4 Send Level		Single Dot	Enc_Send	Select3
+Map	Rotary 5		Channel 3 FX5 Send Level		Single Dot	Enc_Send	Select3
+Map	Rotary 6		Channel 3 FX6 Send Level		Single Dot	Enc_Send	Select3
+Map	Rotary 7		Channel 3 FX7 Send Level		Single Dot	Enc_Send	Select3
+Map	Rotary 8		Channel 3 FX8 Send Level		Single Dot	Enc_Send	Select3
+
+Map	Rotary 1		Channel 4 FX1 Send Level		Single Dot	Enc_Send	Select4
+Map	Rotary 2		Channel 4 FX2 Send Level		Single Dot	Enc_Send	Select4
+Map	Rotary 3		Channel 4 FX3 Send Level		Single Dot	Enc_Send	Select4
+Map	Rotary 4		Channel 4 FX4 Send Level		Single Dot	Enc_Send	Select4
+Map	Rotary 5		Channel 4 FX5 Send Level		Single Dot	Enc_Send	Select4
+Map	Rotary 6		Channel 4 FX6 Send Level		Single Dot	Enc_Send	Select4
+Map	Rotary 7		Channel 4 FX7 Send Level		Single Dot	Enc_Send	Select4
+Map	Rotary 8		Channel 4 FX8 Send Level		Single Dot	Enc_Send	Select4
+
+Map	Rotary 1		Channel 5 FX1 Send Level		Single Dot	Enc_Send	Select5
+Map	Rotary 2		Channel 5 FX2 Send Level		Single Dot	Enc_Send	Select5
+Map	Rotary 3		Channel 5 FX3 Send Level		Single Dot	Enc_Send	Select5
+Map	Rotary 4		Channel 5 FX4 Send Level		Single Dot	Enc_Send	Select5
+Map	Rotary 5		Channel 5 FX5 Send Level		Single Dot	Enc_Send	Select5
+Map	Rotary 6		Channel 5 FX6 Send Level		Single Dot	Enc_Send	Select5
+Map	Rotary 7		Channel 5 FX7 Send Level		Single Dot	Enc_Send	Select5
+Map	Rotary 8		Channel 5 FX8 Send Level		Single Dot	Enc_Send	Select5
+
+Map	Rotary 1		Channel 6 FX1 Send Level		Single Dot	Enc_Send	Select6
+Map	Rotary 2		Channel 6 FX2 Send Level		Single Dot	Enc_Send	Select6
+Map	Rotary 3		Channel 6 FX3 Send Level		Single Dot	Enc_Send	Select6
+Map	Rotary 4		Channel 6 FX4 Send Level		Single Dot	Enc_Send	Select6
+Map	Rotary 5		Channel 6 FX5 Send Level		Single Dot	Enc_Send	Select6
+Map	Rotary 6		Channel 6 FX6 Send Level		Single Dot	Enc_Send	Select6
+Map	Rotary 7		Channel 6 FX7 Send Level		Single Dot	Enc_Send	Select6
+Map	Rotary 8		Channel 6 FX8 Send Level		Single Dot	Enc_Send	Select6
+
+Map	Rotary 1		Channel 7 FX1 Send Level		Single Dot	Enc_Send	Select7
+Map	Rotary 2		Channel 7 FX2 Send Level		Single Dot	Enc_Send	Select7
+Map	Rotary 3		Channel 7 FX3 Send Level		Single Dot	Enc_Send	Select7
+Map	Rotary 4		Channel 7 FX4 Send Level		Single Dot	Enc_Send	Select7
+Map	Rotary 5		Channel 7 FX5 Send Level		Single Dot	Enc_Send	Select7
+Map	Rotary 6		Channel 7 FX6 Send Level		Single Dot	Enc_Send	Select7
+Map	Rotary 7		Channel 7 FX7 Send Level		Single Dot	Enc_Send	Select7
+Map	Rotary 8		Channel 7 FX8 Send Level		Single Dot	Enc_Send	Select7
+
+Map	Rotary 1		Channel 8 FX1 Send Level		Single Dot	Enc_Send	Select8
+Map	Rotary 2		Channel 8 FX2 Send Level		Single Dot	Enc_Send	Select8
+Map	Rotary 3		Channel 8 FX3 Send Level		Single Dot	Enc_Send	Select8
+Map	Rotary 4		Channel 8 FX4 Send Level		Single Dot	Enc_Send	Select8
+Map	Rotary 5		Channel 8 FX5 Send Level		Single Dot	Enc_Send	Select8
+Map	Rotary 6		Channel 8 FX6 Send Level		Single Dot	Enc_Send	Select8
+Map	Rotary 7		Channel 8 FX7 Send Level		Single Dot	Enc_Send	Select8
+Map	Rotary 8		Channel 8 FX8 Send Level		Single Dot	Enc_Send	Select8
+
+
+// _____________ F1
+
+Map	LCD Row 2 Channel 1		">SEND:1"			Enc_Send	Global_0	Global	Func_F1
+Map	LCD Row 2 Channel 2		FX1 Name			Enc_Send	Global_0	Global	Func_F1
+
+Map	Rotary 1		Channel 1 FX1 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F1
+Map	Rotary 2		Channel 2 FX1 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F1
+Map	Rotary 3		Channel 3 FX1 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F1
+Map	Rotary 4		Channel 4 FX1 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F1
+Map	Rotary 5		Channel 5 FX1 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F1
+Map	Rotary 6		Channel 6 FX1 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F1
+Map	Rotary 7		Channel 7 FX1 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F1
+Map	Rotary 8		Channel 8 FX1 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F1
+
+Map	Record 1		Channel 1 FX1 Send On			Enc_Send	Global_0	Global	Func_F1
+Map	Record 2		Channel 2 FX1 Send On			Enc_Send	Global_0	Global	Func_F1
+Map	Record 3		Channel 3 FX1 Send On			Enc_Send	Global_0	Global	Func_F1
+Map	Record 4		Channel 4 FX1 Send On			Enc_Send	Global_0	Global	Func_F1
+Map	Record 5		Channel 5 FX1 Send On			Enc_Send	Global_0	Global	Func_F1
+Map	Record 6		Channel 6 FX1 Send On			Enc_Send	Global_0	Global	Func_F1
+Map	Record 7		Channel 7 FX1 Send On			Enc_Send	Global_0	Global	Func_F1
+Map	Record 8		Channel 8 FX1 Send On			Enc_Send	Global_0	Global	Func_F1
+
+Map	Rotary Button 1		Channel 1 FX1 Pre Fader			Enc_Send	Global_0	Global	Func_F1
+Map	Rotary Button 2		Channel 2 FX1 Pre Fader			Enc_Send	Global_0	Global	Func_F1
+Map	Rotary Button 3		Channel 3 FX1 Pre Fader			Enc_Send	Global_0	Global	Func_F1
+Map	Rotary Button 4		Channel 4 FX1 Pre Fader			Enc_Send	Global_0	Global	Func_F1
+Map	Rotary Button 5		Channel 5 FX1 Pre Fader			Enc_Send	Global_0	Global	Func_F1
+Map	Rotary Button 6		Channel 6 FX1 Pre Fader			Enc_Send	Global_0	Global	Func_F1
+Map	Rotary Button 7		Channel 7 FX1 Pre Fader			Enc_Send	Global_0	Global	Func_F1
+Map	Rotary Button 8		Channel 8 FX1 Pre Fader			Enc_Send	Global_0	Global	Func_F1
+
+
+// _____________ F2
+
+Map	LCD Row 2 Channel 1		">SEND:2"			Enc_Send	Global_0	Global	Func_F2
+Map	LCD Row 2 Channel 2		FX2 Name			Enc_Send	Global_0	Global	Func_F2
+
+Map	Rotary 1		Channel 1 FX2 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F2
+Map	Rotary 2		Channel 2 FX2 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F2
+Map	Rotary 3		Channel 3 FX2 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F2
+Map	Rotary 4		Channel 4 FX2 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F2
+Map	Rotary 5		Channel 5 FX2 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F2
+Map	Rotary 6		Channel 6 FX2 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F2
+Map	Rotary 7		Channel 7 FX2 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F2
+Map	Rotary 8		Channel 8 FX2 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F2
+
+Map	Record 1		Channel 1 FX2 Send On			Enc_Send	Global_0	Global	Func_F2
+Map	Record 2		Channel 2 FX2 Send On			Enc_Send	Global_0	Global	Func_F2
+Map	Record 3		Channel 3 FX2 Send On			Enc_Send	Global_0	Global	Func_F2
+Map	Record 4		Channel 4 FX2 Send On			Enc_Send	Global_0	Global	Func_F2
+Map	Record 5		Channel 5 FX2 Send On			Enc_Send	Global_0	Global	Func_F2
+Map	Record 6		Channel 6 FX2 Send On			Enc_Send	Global_0	Global	Func_F2
+Map	Record 7		Channel 7 FX2 Send On			Enc_Send	Global_0	Global	Func_F2
+Map	Record 8		Channel 8 FX2 Send On			Enc_Send	Global_0	Global	Func_F2
+
+Map	Rotary Button 1		Channel 1 FX2 Pre Fader			Enc_Send	Global_0	Global	Func_F2
+Map	Rotary Button 2		Channel 2 FX2 Pre Fader			Enc_Send	Global_0	Global	Func_F2
+Map	Rotary Button 3		Channel 3 FX2 Pre Fader			Enc_Send	Global_0	Global	Func_F2
+Map	Rotary Button 4		Channel 4 FX2 Pre Fader			Enc_Send	Global_0	Global	Func_F2
+Map	Rotary Button 5		Channel 5 FX2 Pre Fader			Enc_Send	Global_0	Global	Func_F2
+Map	Rotary Button 6		Channel 6 FX2 Pre Fader			Enc_Send	Global_0	Global	Func_F2
+Map	Rotary Button 7		Channel 7 FX2 Pre Fader			Enc_Send	Global_0	Global	Func_F2
+Map	Rotary Button 8		Channel 8 FX2 Pre Fader			Enc_Send	Global_0	Global	Func_F2
+
+// _____________ F3
+
+Map	LCD Row 2 Channel 1		">SEND:3"			Enc_Send	Global_0	Global	Func_F3
+Map	LCD Row 2 Channel 2		FX3 Name			Enc_Send	Global_0	Global	Func_F3
+
+Map	Rotary 1		Channel 1 FX3 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F3
+Map	Rotary 2		Channel 2 FX3 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F3
+Map	Rotary 3		Channel 3 FX3 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F3
+Map	Rotary 4		Channel 4 FX3 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F3
+Map	Rotary 5		Channel 5 FX3 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F3
+Map	Rotary 6		Channel 6 FX3 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F3
+Map	Rotary 7		Channel 7 FX3 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F3
+Map	Rotary 8		Channel 8 FX3 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F3
+
+Map	Record 1		Channel 1 FX3 Send On			Enc_Send	Global_0	Global	Func_F3
+Map	Record 2		Channel 2 FX3 Send On			Enc_Send	Global_0	Global	Func_F3
+Map	Record 3		Channel 3 FX3 Send On			Enc_Send	Global_0	Global	Func_F3
+Map	Record 4		Channel 4 FX3 Send On			Enc_Send	Global_0	Global	Func_F3
+Map	Record 5		Channel 5 FX3 Send On			Enc_Send	Global_0	Global	Func_F3
+Map	Record 6		Channel 6 FX3 Send On			Enc_Send	Global_0	Global	Func_F3
+Map	Record 7		Channel 7 FX3 Send On			Enc_Send	Global_0	Global	Func_F3
+Map	Record 8		Channel 8 FX3 Send On			Enc_Send	Global_0	Global	Func_F3
+
+Map	Rotary Button 1		Channel 1 FX3 Pre Fader			Enc_Send	Global_0	Global	Func_F3
+Map	Rotary Button 2		Channel 2 FX3 Pre Fader			Enc_Send	Global_0	Global	Func_F3
+Map	Rotary Button 3		Channel 3 FX3 Pre Fader			Enc_Send	Global_0	Global	Func_F3
+Map	Rotary Button 4		Channel 4 FX3 Pre Fader			Enc_Send	Global_0	Global	Func_F3
+Map	Rotary Button 5		Channel 5 FX3 Pre Fader			Enc_Send	Global_0	Global	Func_F3
+Map	Rotary Button 6		Channel 6 FX3 Pre Fader			Enc_Send	Global_0	Global	Func_F3
+Map	Rotary Button 7		Channel 7 FX3 Pre Fader			Enc_Send	Global_0	Global	Func_F3
+Map	Rotary Button 8		Channel 8 FX3 Pre Fader			Enc_Send	Global_0	Global	Func_F3
+
+// _____________ F4
+
+Map	LCD Row 2 Channel 1		">SEND:4"			Enc_Send	Global_0	Global	Func_F4
+Map	LCD Row 2 Channel 2		FX4 Name			Enc_Send	Global_0	Global	Func_F4
+
+Map	Rotary 1		Channel 1 FX4 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F4
+Map	Rotary 2		Channel 2 FX4 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F4
+Map	Rotary 3		Channel 3 FX4 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F4
+Map	Rotary 4		Channel 4 FX4 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F4
+Map	Rotary 5		Channel 5 FX4 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F4
+Map	Rotary 6		Channel 6 FX4 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F4
+Map	Rotary 7		Channel 7 FX4 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F4
+Map	Rotary 8		Channel 8 FX4 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F4
+
+Map	Record 1		Channel 1 FX4 Send On			Enc_Send	Global_0	Global	Func_F4
+Map	Record 2		Channel 2 FX4 Send On			Enc_Send	Global_0	Global	Func_F4
+Map	Record 3		Channel 3 FX4 Send On			Enc_Send	Global_0	Global	Func_F4
+Map	Record 4		Channel 4 FX4 Send On			Enc_Send	Global_0	Global	Func_F4
+Map	Record 5		Channel 5 FX4 Send On			Enc_Send	Global_0	Global	Func_F4
+Map	Record 6		Channel 6 FX4 Send On			Enc_Send	Global_0	Global	Func_F4
+Map	Record 7		Channel 7 FX4 Send On			Enc_Send	Global_0	Global	Func_F4
+Map	Record 8		Channel 8 FX4 Send On			Enc_Send	Global_0	Global	Func_F4
+
+Map	Rotary Button 1		Channel 1 FX4 Pre Fader			Enc_Send	Global_0	Global	Func_F4
+Map	Rotary Button 2		Channel 2 FX4 Pre Fader			Enc_Send	Global_0	Global	Func_F4
+Map	Rotary Button 3		Channel 3 FX4 Pre Fader			Enc_Send	Global_0	Global	Func_F4
+Map	Rotary Button 4		Channel 4 FX4 Pre Fader			Enc_Send	Global_0	Global	Func_F4
+Map	Rotary Button 5		Channel 5 FX4 Pre Fader			Enc_Send	Global_0	Global	Func_F4
+Map	Rotary Button 6		Channel 6 FX4 Pre Fader			Enc_Send	Global_0	Global	Func_F4
+Map	Rotary Button 7		Channel 7 FX4 Pre Fader			Enc_Send	Global_0	Global	Func_F4
+Map	Rotary Button 8		Channel 8 FX4 Pre Fader			Enc_Send	Global_0	Global	Func_F4
+
+// _____________ F5
+
+Map	LCD Row 2 Channel 1		">SEND:5"			Enc_Send	Global_0	Global	Func_F5
+Map	LCD Row 2 Channel 2		FX5 Name			Enc_Send	Global_0	Global	Func_F5
+
+Map	Rotary 1		Channel 1 FX5 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F5
+Map	Rotary 2		Channel 2 FX5 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F5
+Map	Rotary 3		Channel 3 FX5 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F5
+Map	Rotary 4		Channel 4 FX5 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F5
+Map	Rotary 5		Channel 5 FX5 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F5
+Map	Rotary 6		Channel 6 FX5 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F5
+Map	Rotary 7		Channel 7 FX5 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F5
+Map	Rotary 8		Channel 8 FX5 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F5
+
+Map	Record 1		Channel 1 FX5 Send On			Enc_Send	Global_0	Global	Func_F5
+Map	Record 2		Channel 2 FX5 Send On			Enc_Send	Global_0	Global	Func_F5
+Map	Record 3		Channel 3 FX5 Send On			Enc_Send	Global_0	Global	Func_F5
+Map	Record 4		Channel 4 FX5 Send On			Enc_Send	Global_0	Global	Func_F5
+Map	Record 5		Channel 5 FX5 Send On			Enc_Send	Global_0	Global	Func_F5
+Map	Record 6		Channel 6 FX5 Send On			Enc_Send	Global_0	Global	Func_F5
+Map	Record 7		Channel 7 FX5 Send On			Enc_Send	Global_0	Global	Func_F5
+Map	Record 8		Channel 8 FX5 Send On			Enc_Send	Global_0	Global	Func_F5
+
+Map	Rotary Button 1		Channel 1 FX5 Pre Fader			Enc_Send	Global_0	Global	Func_F5
+Map	Rotary Button 2		Channel 2 FX5 Pre Fader			Enc_Send	Global_0	Global	Func_F5
+Map	Rotary Button 3		Channel 3 FX5 Pre Fader			Enc_Send	Global_0	Global	Func_F5
+Map	Rotary Button 4		Channel 4 FX5 Pre Fader			Enc_Send	Global_0	Global	Func_F5
+Map	Rotary Button 5		Channel 5 FX5 Pre Fader			Enc_Send	Global_0	Global	Func_F5
+Map	Rotary Button 6		Channel 6 FX5 Pre Fader			Enc_Send	Global_0	Global	Func_F5
+Map	Rotary Button 7		Channel 7 FX5 Pre Fader			Enc_Send	Global_0	Global	Func_F5
+Map	Rotary Button 8		Channel 8 FX5 Pre Fader			Enc_Send	Global_0	Global	Func_F5
+
+// _____________ F6
+
+Map	LCD Row 2 Channel 1		">SEND:6"			Enc_Send	Global_0	Global	Func_F6
+Map	LCD Row 2 Channel 2		FX6 Name			Enc_Send	Global_0	Global	Func_F6
+
+Map	Rotary 1		Channel 1 FX6 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F6
+Map	Rotary 2		Channel 2 FX6 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F6
+Map	Rotary 3		Channel 3 FX6 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F6
+Map	Rotary 4		Channel 4 FX6 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F6
+Map	Rotary 5		Channel 5 FX6 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F6
+Map	Rotary 6		Channel 6 FX6 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F6
+Map	Rotary 7		Channel 7 FX6 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F6
+Map	Rotary 8		Channel 8 FX6 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F6
+
+Map	Record 1		Channel 1 FX6 Send On			Enc_Send	Global_0	Global	Func_F6
+Map	Record 2		Channel 2 FX6 Send On			Enc_Send	Global_0	Global	Func_F6
+Map	Record 3		Channel 3 FX6 Send On			Enc_Send	Global_0	Global	Func_F6
+Map	Record 4		Channel 4 FX6 Send On			Enc_Send	Global_0	Global	Func_F6
+Map	Record 5		Channel 5 FX6 Send On			Enc_Send	Global_0	Global	Func_F6
+Map	Record 6		Channel 6 FX6 Send On			Enc_Send	Global_0	Global	Func_F6
+Map	Record 7		Channel 7 FX6 Send On			Enc_Send	Global_0	Global	Func_F6
+Map	Record 8		Channel 8 FX6 Send On			Enc_Send	Global_0	Global	Func_F6
+
+Map	Rotary Button 1		Channel 1 FX6 Pre Fader			Enc_Send	Global_0	Global	Func_F6
+Map	Rotary Button 2		Channel 2 FX6 Pre Fader			Enc_Send	Global_0	Global	Func_F6
+Map	Rotary Button 3		Channel 3 FX6 Pre Fader			Enc_Send	Global_0	Global	Func_F6
+Map	Rotary Button 4		Channel 4 FX6 Pre Fader			Enc_Send	Global_0	Global	Func_F6
+Map	Rotary Button 5		Channel 5 FX6 Pre Fader			Enc_Send	Global_0	Global	Func_F6
+Map	Rotary Button 6		Channel 6 FX6 Pre Fader			Enc_Send	Global_0	Global	Func_F6
+Map	Rotary Button 7		Channel 7 FX6 Pre Fader			Enc_Send	Global_0	Global	Func_F6
+Map	Rotary Button 8		Channel 8 FX6 Pre Fader			Enc_Send	Global_0	Global	Func_F6
+
+// _____________ F7
+
+Map	LCD Row 2 Channel 1		">SEND:7"			Enc_Send	Global_0	Global	Func_F7
+Map	LCD Row 2 Channel 2		FX7 Name			Enc_Send	Global_0	Global	Func_F7
+
+Map	Rotary 1		Channel 1 FX7 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F7
+Map	Rotary 2		Channel 2 FX7 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F7
+Map	Rotary 3		Channel 3 FX7 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F7
+Map	Rotary 4		Channel 4 FX7 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F7
+Map	Rotary 5		Channel 5 FX7 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F7
+Map	Rotary 6		Channel 6 FX7 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F7
+Map	Rotary 7		Channel 7 FX7 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F7
+Map	Rotary 8		Channel 8 FX7 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F7
+
+Map	Record 1		Channel 1 FX7 Send On			Enc_Send	Global_0	Global	Func_F7
+Map	Record 2		Channel 2 FX7 Send On			Enc_Send	Global_0	Global	Func_F7
+Map	Record 3		Channel 3 FX7 Send On			Enc_Send	Global_0	Global	Func_F7
+Map	Record 4		Channel 4 FX7 Send On			Enc_Send	Global_0	Global	Func_F7
+Map	Record 5		Channel 5 FX7 Send On			Enc_Send	Global_0	Global	Func_F7
+Map	Record 6		Channel 6 FX7 Send On			Enc_Send	Global_0	Global	Func_F7
+Map	Record 7		Channel 7 FX7 Send On			Enc_Send	Global_0	Global	Func_F7
+Map	Record 8		Channel 8 FX7 Send On			Enc_Send	Global_0	Global	Func_F7
+
+Map	Rotary Button 1		Channel 1 FX7 Pre Fader			Enc_Send	Global_0	Global	Func_F7
+Map	Rotary Button 2		Channel 2 FX7 Pre Fader			Enc_Send	Global_0	Global	Func_F7
+Map	Rotary Button 3		Channel 3 FX7 Pre Fader			Enc_Send	Global_0	Global	Func_F7
+Map	Rotary Button 4		Channel 4 FX7 Pre Fader			Enc_Send	Global_0	Global	Func_F7
+Map	Rotary Button 5		Channel 5 FX7 Pre Fader			Enc_Send	Global_0	Global	Func_F7
+Map	Rotary Button 6		Channel 6 FX7 Pre Fader			Enc_Send	Global_0	Global	Func_F7
+Map	Rotary Button 7		Channel 7 FX7 Pre Fader			Enc_Send	Global_0	Global	Func_F7
+Map	Rotary Button 8		Channel 8 FX7 Pre Fader			Enc_Send	Global_0	Global	Func_F7
+
+// _____________ F8
+
+Map	LCD Row 2 Channel 1		">SEND:8"			Enc_Send	Global_0	Global	Func_F8
+Map	LCD Row 2 Channel 2		FX8 Name			Enc_Send	Global_0	Global	Func_F8
+
+Map	Rotary 1		Channel 1 FX8 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F8
+Map	Rotary 2		Channel 2 FX8 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F8
+Map	Rotary 3		Channel 3 FX8 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F8
+Map	Rotary 4		Channel 4 FX8 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F8
+Map	Rotary 5		Channel 5 FX8 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F8
+Map	Rotary 6		Channel 6 FX8 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F8
+Map	Rotary 7		Channel 7 FX8 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F8
+Map	Rotary 8		Channel 8 FX8 Send Level		Single Dot	Enc_Send	Global_0	Global	Func_F8
+
+Map	Record 1		Channel 1 FX8 Send On			Enc_Send	Global_0	Global	Func_F8
+Map	Record 2		Channel 2 FX8 Send On			Enc_Send	Global_0	Global	Func_F8
+Map	Record 3		Channel 3 FX8 Send On			Enc_Send	Global_0	Global	Func_F8
+Map	Record 4		Channel 4 FX8 Send On			Enc_Send	Global_0	Global	Func_F8
+Map	Record 5		Channel 5 FX8 Send On			Enc_Send	Global_0	Global	Func_F8
+Map	Record 6		Channel 6 FX8 Send On			Enc_Send	Global_0	Global	Func_F8
+Map	Record 7		Channel 7 FX8 Send On			Enc_Send	Global_0	Global	Func_F8
+Map	Record 8		Channel 8 FX8 Send On			Enc_Send	Global_0	Global	Func_F8
+
+Map	Rotary Button 1		Channel 1 FX8 Pre Fader			Enc_Send	Global_0	Global	Func_F8
+Map	Rotary Button 2		Channel 2 FX8 Pre Fader			Enc_Send	Global_0	Global	Func_F8
+Map	Rotary Button 3		Channel 3 FX8 Pre Fader			Enc_Send	Global_0	Global	Func_F8
+Map	Rotary Button 4		Channel 4 FX8 Pre Fader			Enc_Send	Global_0	Global	Func_F8
+Map	Rotary Button 5		Channel 5 FX8 Pre Fader			Enc_Send	Global_0	Global	Func_F8
+Map	Rotary Button 6		Channel 6 FX8 Pre Fader			Enc_Send	Global_0	Global	Func_F8
+Map	Rotary Button 7		Channel 7 FX8 Pre Fader			Enc_Send	Global_0	Global	Func_F8
+Map	Rotary Button 8		Channel 8 FX8 Pre Fader			Enc_Send	Global_0	Global	Func_F8
+
+
+// _____________ SEND _____________ GLOBAL 
+// _____________ F3 - RETURNS
+
+Map	LCD Row 1 Channel 1		FX1 Name			Enc_Send	Global_0	Func_F3
+Map	LCD Row 1 Channel 2		FX2 Name			Enc_Send	Global_0	Func_F3
+Map	LCD Row 1 Channel 3		FX3 Name			Enc_Send	Global_0	Func_F3
+Map	LCD Row 1 Channel 4		FX4 Name			Enc_Send	Global_0	Func_F3
+Map	LCD Row 1 Channel 5		FX5 Name			Enc_Send	Global_0	Func_F3
+Map	LCD Row 1 Channel 6		FX6 Name			Enc_Send	Global_0	Func_F3
+Map	LCD Row 1 Channel 7		FX7 Name			Enc_Send	Global_0	Func_F3
+Map	LCD Row 1 Channel 8		FX8 Name			Enc_Send	Global_0	Func_F3
+
+Map	LCD Row 2 Channel 1		">RETURN"			Enc_Send	Global_0	Func_F3
+Map	LCD Row 2 Channel 2		""			Enc_Send	Global_0	Func_F3
+
+Map	Rotary 1		FX1 Return Level		Single Dot	Enc_Send	Global_0	Func_F3
+Map	Rotary 2		FX2 Return Level		Single Dot	Enc_Send	Global_0	Func_F3
+Map	Rotary 3		FX3 Return Level		Single Dot	Enc_Send	Global_0	Func_F3
+Map	Rotary 4		FX4 Return Level		Single Dot	Enc_Send	Global_0	Func_F3
+Map	Rotary 5		FX5 Return Level		Single Dot	Enc_Send	Global_0	Func_F3
+Map	Rotary 6		FX6 Return Level		Single Dot	Enc_Send	Global_0	Func_F3
+Map	Rotary 7		FX7 Return Level		Single Dot	Enc_Send	Global_0	Func_F3
+Map	Rotary 8		FX8 Return Level		Single Dot	Enc_Send	Global_0	Func_F3
+
+Map	Record 1		FX1 Mute			Enc_Send	Global_0	Func_F3
+Map	Record 2		FX2 Mute			Enc_Send	Global_0	Func_F3
+Map	Record 3		FX3 Mute			Enc_Send	Global_0	Func_F3
+Map	Record 4		FX4 Mute			Enc_Send	Global_0	Func_F3
+Map	Record 5		FX5 Mute			Enc_Send	Global_0	Func_F3
+Map	Record 6		FX6 Mute			Enc_Send	Global_0	Func_F3
+Map	Record 7		FX7 Mute			Enc_Send	Global_0	Func_F3
+Map	Record 8		FX8 Mute			Enc_Send	Global_0	Func_F3
+
+Map	Peak Meter 1		FX1 Return Level Meter			Enc_Send	Global_0	Func_F3
+Map	Peak Meter 2		FX2 Return Level Meter			Enc_Send	Global_0	Func_F3
+Map	Peak Meter 3		FX3 Return Level Meter			Enc_Send	Global_0	Func_F3
+Map	Peak Meter 4		FX4 Return Level Meter			Enc_Send	Global_0	Func_F3
+Map	Peak Meter 5		FX5 Return Level Meter			Enc_Send	Global_0	Func_F3
+Map	Peak Meter 6		FX6 Return Level Meter			Enc_Send	Global_0	Func_F3
+Map	Peak Meter 7		FX7 Return Level Meter			Enc_Send	Global_0	Func_F3
+Map	Peak Meter 8		FX8 Return Level Meter			Enc_Send	Global_0	Func_F3
+
+
+
+
+// SEND ________ RECORD ________ GLOBAL
+
+Map	LCD Row 2 Channel 1		Channel 1 Channel Name			Enc_Send	Select1
+
+Map	Record 1		Channel 1 FX1 Send On			Enc_Send	Select1	Func_F1
+Map	Record 2		Channel 1 FX2 Send On			Enc_Send	Select1	Func_F1
+Map	Record 3		Channel 1 FX3 Send On			Enc_Send	Select1	Func_F1
+Map	Record 4		Channel 1 FX4 Send On			Enc_Send	Select1	Func_F1
+Map	Record 5		Channel 1 FX5 Send On			Enc_Send	Select1	Func_F1
+Map	Record 6		Channel 1 FX6 Send On			Enc_Send	Select1	Func_F1
+Map	Record 7		Channel 1 FX7 Send On			Enc_Send	Select1	Func_F1
+Map	Record 8		Channel 1 FX8 Send On			Enc_Send	Select1	Func_F1
+
+Map	LCD Row 2 Channel 1		Channel 2 Channel Name			Enc_Send	Select2
+
+Map	Record 1		Channel 2 FX1 Send On			Enc_Send	Select2	Func_F1
+Map	Record 2		Channel 2 FX2 Send On			Enc_Send	Select2	Func_F1
+Map	Record 3		Channel 2 FX3 Send On			Enc_Send	Select2	Func_F1
+Map	Record 4		Channel 2 FX4 Send On			Enc_Send	Select2	Func_F1
+Map	Record 5		Channel 2 FX5 Send On			Enc_Send	Select2	Func_F1
+Map	Record 6		Channel 2 FX6 Send On			Enc_Send	Select2	Func_F1
+Map	Record 7		Channel 2 FX7 Send On			Enc_Send	Select2	Func_F1
+Map	Record 8		Channel 2 FX8 Send On			Enc_Send	Select2	Func_F1
+
+Map	LCD Row 2 Channel 1		Channel 3 Channel Name			Enc_Send	Select3
+
+Map	Record 1		Channel 3 FX1 Send On			Enc_Send	Select3	Func_F1
+Map	Record 2		Channel 3 FX2 Send On			Enc_Send	Select3	Func_F1
+Map	Record 3		Channel 3 FX3 Send On			Enc_Send	Select3	Func_F1
+Map	Record 4		Channel 3 FX4 Send On			Enc_Send	Select3	Func_F1
+Map	Record 5		Channel 3 FX5 Send On			Enc_Send	Select3	Func_F1
+Map	Record 6		Channel 3 FX6 Send On			Enc_Send	Select3	Func_F1
+Map	Record 7		Channel 3 FX7 Send On			Enc_Send	Select3	Func_F1
+Map	Record 8		Channel 3 FX8 Send On			Enc_Send	Select3	Func_F1
+
+Map	LCD Row 2 Channel 1		Channel 4 Channel Name			Enc_Send	Select4
+
+Map	Record 1		Channel 4 FX1 Send On			Enc_Send	Select4	Func_F1
+Map	Record 2		Channel 4 FX2 Send On			Enc_Send	Select4	Func_F1
+Map	Record 3		Channel 4 FX3 Send On			Enc_Send	Select4	Func_F1
+Map	Record 4		Channel 4 FX4 Send On			Enc_Send	Select4	Func_F1
+Map	Record 5		Channel 4 FX5 Send On			Enc_Send	Select4	Func_F1
+Map	Record 6		Channel 4 FX6 Send On			Enc_Send	Select4	Func_F1
+Map	Record 7		Channel 4 FX7 Send On			Enc_Send	Select4	Func_F1
+Map	Record 8		Channel 4 FX8 Send On			Enc_Send	Select4	Func_F1
+
+Map	LCD Row 2 Channel 1		Channel 5 Channel Name			Enc_Send	Select5
+
+Map	Record 1		Channel 5 FX1 Send On			Enc_Send	Select5	Func_F1
+Map	Record 2		Channel 5 FX2 Send On			Enc_Send	Select5	Func_F1
+Map	Record 3		Channel 5 FX3 Send On			Enc_Send	Select5	Func_F1
+Map	Record 4		Channel 5 FX4 Send On			Enc_Send	Select5	Func_F1
+Map	Record 5		Channel 5 FX5 Send On			Enc_Send	Select5	Func_F1
+Map	Record 6		Channel 5 FX6 Send On			Enc_Send	Select5	Func_F1
+Map	Record 7		Channel 5 FX7 Send On			Enc_Send	Select5	Func_F1
+Map	Record 8		Channel 5 FX8 Send On			Enc_Send	Select5	Func_F1
+
+Map	LCD Row 2 Channel 1		Channel 6 Channel Name			Enc_Send	Select6
+
+Map	Record 1		Channel 6 FX1 Send On			Enc_Send	Select6	Func_F1
+Map	Record 2		Channel 6 FX2 Send On			Enc_Send	Select6	Func_F1
+Map	Record 3		Channel 6 FX3 Send On			Enc_Send	Select6	Func_F1
+Map	Record 4		Channel 6 FX4 Send On			Enc_Send	Select6	Func_F1
+Map	Record 5		Channel 6 FX5 Send On			Enc_Send	Select6	Func_F1
+Map	Record 6		Channel 6 FX6 Send On			Enc_Send	Select6	Func_F1
+Map	Record 7		Channel 6 FX7 Send On			Enc_Send	Select6	Func_F1
+Map	Record 8		Channel 6 FX8 Send On			Enc_Send	Select6	Func_F1
+
+Map	LCD Row 2 Channel 1		Channel 7 Channel Name			Enc_Send	Select7
+
+Map	Record 1		Channel 7 FX1 Send On			Enc_Send	Select7	Func_F1
+Map	Record 2		Channel 7 FX2 Send On			Enc_Send	Select7	Func_F1
+Map	Record 3		Channel 7 FX3 Send On			Enc_Send	Select7	Func_F1
+Map	Record 4		Channel 7 FX4 Send On			Enc_Send	Select7	Func_F1
+Map	Record 5		Channel 7 FX5 Send On			Enc_Send	Select7	Func_F1
+Map	Record 6		Channel 7 FX6 Send On			Enc_Send	Select7	Func_F1
+Map	Record 7		Channel 7 FX7 Send On			Enc_Send	Select7	Func_F1
+Map	Record 8		Channel 7 FX8 Send On			Enc_Send	Select7	Func_F1
+
+Map	LCD Row 2 Channel 1		Channel 8 Channel Name			Enc_Send	Select8
+
+Map	Record 1		Channel 8 FX1 Send On			Enc_Send	Select8	Func_F1
+Map	Record 2		Channel 8 FX2 Send On			Enc_Send	Select8	Func_F1
+Map	Record 3		Channel 8 FX3 Send On			Enc_Send	Select8	Func_F1
+Map	Record 4		Channel 8 FX4 Send On			Enc_Send	Select8	Func_F1
+Map	Record 5		Channel 8 FX5 Send On			Enc_Send	Select8	Func_F1
+Map	Record 6		Channel 8 FX6 Send On			Enc_Send	Select8	Func_F1
+Map	Record 7		Channel 8 FX7 Send On			Enc_Send	Select8	Func_F1
+Map	Record 8		Channel 8 FX8 Send On			Enc_Send	Select8	Func_F1
+
+// SEND ________ RECORD ________ FLIP
+
+Map	LCD Row 2 Channel 1		"Pre"			Enc_Send	Func_F2
+Map	LCD Row 2 Channel 2		"Pre"			Enc_Send	Func_F2
+Map	LCD Row 2 Channel 3		"Pre"			Enc_Send	Func_F2
+Map	LCD Row 2 Channel 4		"Pre"			Enc_Send	Func_F2
+Map	LCD Row 2 Channel 5		"Pre"			Enc_Send	Func_F2
+Map	LCD Row 2 Channel 6		"Pre"			Enc_Send	Func_F2
+Map	LCD Row 2 Channel 7		"Pre"			Enc_Send	Func_F2
+Map	LCD Row 2 Channel 8		"Pre"			Enc_Send	Func_F2
+
+Map	Record 1		Channel 1 FX1 Pre Fader			Enc_Send	Select1	Func_F2
+Map	Record 2		Channel 1 FX2 Pre Fader			Enc_Send	Select1	Func_F2
+Map	Record 3		Channel 1 FX3 Pre Fader			Enc_Send	Select1	Func_F2
+Map	Record 4		Channel 1 FX4 Pre Fader			Enc_Send	Select1	Func_F2
+Map	Record 5		Channel 1 FX5 Pre Fader			Enc_Send	Select1	Func_F2
+Map	Record 6		Channel 1 FX6 Pre Fader			Enc_Send	Select1	Func_F2
+Map	Record 7		Channel 1 FX7 Pre Fader			Enc_Send	Select1	Func_F2
+Map	Record 8		Channel 1 FX8 Pre Fader			Enc_Send	Select1	Func_F2
+
+Map	Record 1		Channel 2 FX1 Pre Fader			Enc_Send	Select2	Func_F2
+Map	Record 2		Channel 2 FX2 Pre Fader			Enc_Send	Select2	Func_F2
+Map	Record 3		Channel 2 FX3 Pre Fader			Enc_Send	Select2	Func_F2
+Map	Record 4		Channel 2 FX4 Pre Fader			Enc_Send	Select2	Func_F2
+Map	Record 5		Channel 2 FX5 Pre Fader			Enc_Send	Select2	Func_F2
+Map	Record 6		Channel 2 FX6 Pre Fader			Enc_Send	Select2	Func_F2
+Map	Record 7		Channel 2 FX7 Pre Fader			Enc_Send	Select2	Func_F2
+Map	Record 8		Channel 2 FX8 Pre Fader			Enc_Send	Select2	Func_F2
+
+Map	Record 1		Channel 3 FX1 Pre Fader			Enc_Send	Select3	Func_F2
+Map	Record 2		Channel 3 FX2 Pre Fader			Enc_Send	Select3	Func_F2
+Map	Record 3		Channel 3 FX3 Pre Fader			Enc_Send	Select3	Func_F2
+Map	Record 4		Channel 3 FX4 Pre Fader			Enc_Send	Select3	Func_F2
+Map	Record 5		Channel 3 FX5 Pre Fader			Enc_Send	Select3	Func_F2
+Map	Record 6		Channel 3 FX6 Pre Fader			Enc_Send	Select3	Func_F2
+Map	Record 7		Channel 3 FX7 Pre Fader			Enc_Send	Select3	Func_F2
+Map	Record 8		Channel 3 FX8 Pre Fader			Enc_Send	Select3	Func_F2
+
+Map	Record 1		Channel 4 FX1 Pre Fader			Enc_Send	Select4	Func_F2
+Map	Record 2		Channel 4 FX2 Pre Fader			Enc_Send	Select4	Func_F2
+Map	Record 3		Channel 4 FX3 Pre Fader			Enc_Send	Select4	Func_F2
+Map	Record 4		Channel 4 FX4 Pre Fader			Enc_Send	Select4	Func_F2
+Map	Record 5		Channel 4 FX5 Pre Fader			Enc_Send	Select4	Func_F2
+Map	Record 6		Channel 4 FX6 Pre Fader			Enc_Send	Select4	Func_F2
+Map	Record 7		Channel 4 FX7 Pre Fader			Enc_Send	Select4	Func_F2
+Map	Record 8		Channel 4 FX8 Pre Fader			Enc_Send	Select4	Func_F2
+
+Map	Record 1		Channel 5 FX1 Pre Fader			Enc_Send	Select5	Func_F2
+Map	Record 2		Channel 5 FX2 Pre Fader			Enc_Send	Select5	Func_F2
+Map	Record 3		Channel 5 FX3 Pre Fader			Enc_Send	Select5	Func_F2
+Map	Record 4		Channel 5 FX4 Pre Fader			Enc_Send	Select5	Func_F2
+Map	Record 5		Channel 5 FX5 Pre Fader			Enc_Send	Select5	Func_F2
+Map	Record 6		Channel 5 FX6 Pre Fader			Enc_Send	Select5	Func_F2
+Map	Record 7		Channel 5 FX7 Pre Fader			Enc_Send	Select5	Func_F2
+Map	Record 8		Channel 5 FX8 Pre Fader			Enc_Send	Select5	Func_F2
+
+Map	Record 1		Channel 6 FX1 Pre Fader			Enc_Send	Select6	Func_F2
+Map	Record 2		Channel 6 FX2 Pre Fader			Enc_Send	Select6	Func_F2
+Map	Record 3		Channel 6 FX3 Pre Fader			Enc_Send	Select6	Func_F2
+Map	Record 4		Channel 6 FX4 Pre Fader			Enc_Send	Select6	Func_F2
+Map	Record 5		Channel 6 FX5 Pre Fader			Enc_Send	Select6	Func_F2
+Map	Record 6		Channel 6 FX6 Pre Fader			Enc_Send	Select6	Func_F2
+Map	Record 7		Channel 6 FX7 Pre Fader			Enc_Send	Select6	Func_F2
+Map	Record 8		Channel 6 FX8 Pre Fader			Enc_Send	Select6	Func_F2
+
+Map	Record 1		Channel 7 FX1 Pre Fader			Enc_Send	Select7	Func_F2
+Map	Record 2		Channel 7 FX2 Pre Fader			Enc_Send	Select7	Func_F2
+Map	Record 3		Channel 7 FX3 Pre Fader			Enc_Send	Select7	Func_F2
+Map	Record 4		Channel 7 FX4 Pre Fader			Enc_Send	Select7	Func_F2
+Map	Record 5		Channel 7 FX5 Pre Fader			Enc_Send	Select7	Func_F2
+Map	Record 6		Channel 7 FX6 Pre Fader			Enc_Send	Select7	Func_F2
+Map	Record 7		Channel 7 FX7 Pre Fader			Enc_Send	Select7	Func_F2
+Map	Record 8		Channel 7 FX8 Pre Fader			Enc_Send	Select7	Func_F2
+
+Map	Record 1		Channel 8 FX1 Pre Fader			Enc_Send	Select8	Func_F2
+Map	Record 2		Channel 8 FX2 Pre Fader			Enc_Send	Select8	Func_F2
+Map	Record 3		Channel 8 FX3 Pre Fader			Enc_Send	Select8	Func_F2
+Map	Record 4		Channel 8 FX4 Pre Fader			Enc_Send	Select8	Func_F2
+Map	Record 5		Channel 8 FX5 Pre Fader			Enc_Send	Select8	Func_F2
+Map	Record 6		Channel 8 FX6 Pre Fader			Enc_Send	Select8	Func_F2
+Map	Record 7		Channel 8 FX7 Pre Fader			Enc_Send	Select8	Func_F2
+Map	Record 8		Channel 8 FX8 Pre Fader			Enc_Send	Select8	Func_F2
+
+
+
+// _____________ PLUGIN _____________ MULTI _____________ BOTH
+
+Map	LCD Row 1 Channel 1		""			Enc_Plugin	Global_0
+Map	LCD Row 1 Channel 2		""			Enc_Plugin	Global_0
+Map	LCD Row 1 Channel 3		""			Enc_Plugin	Global_0
+Map	LCD Row 1 Channel 4		""			Enc_Plugin	Global_0
+Map	LCD Row 1 Channel 5		""			Enc_Plugin	Global_0
+Map	LCD Row 1 Channel 6		""			Enc_Plugin	Global_0
+Map	LCD Row 1 Channel 7		""			Enc_Plugin	Global_0
+Map	LCD Row 1 Channel 8		""			Enc_Plugin	Global_0
+
+Map	LCD Row 2 Channel 2		""			Enc_Plugin	Global_0
+Map	LCD Row 2 Channel 3		""			Enc_Plugin	Global_0
+Map	LCD Row 2 Channel 4		""			Enc_Plugin	Global_0
+Map	LCD Row 2 Channel 5		""			Enc_Plugin	Global_0
+Map	LCD Row 2 Channel 6		""			Enc_Plugin	Global_0
+Map	LCD Row 2 Channel 7		""			Enc_Plugin	Global_0
+Map	LCD Row 2 Channel 8		""			Enc_Plugin	Global_0
+
+// _____________ F5-8 BLANK
+
+Map	LCD Row 2 Channel 1		""			Enc_Plugin	Global_0	Func_F5
+Map	LCD Row 2 Channel 1		""			Enc_Plugin	Global_0	Func_F6
+Map	LCD Row 2 Channel 1		""			Enc_Plugin	Global_0	Func_F7
+Map	LCD Row 2 Channel 1		""			Enc_Plugin	Global_0	Func_F8
+
+// _____________ F1
+
+
+Map	LCD Row 2 Channel 1		">INSERT"			Enc_Plugin	Global_0	Func_F1
+
+Map	LCD Row 1 Channel 1		Channel 1 Channel Name			Enc_Plugin	Global_0	Func_F1
+Map	LCD Row 1 Channel 2		Channel 2 Channel Name			Enc_Plugin	Global_0	Func_F1
+Map	LCD Row 1 Channel 3		Channel 3 Channel Name			Enc_Plugin	Global_0	Func_F1
+Map	LCD Row 1 Channel 4		Channel 4 Channel Name			Enc_Plugin	Global_0	Func_F1
+Map	LCD Row 1 Channel 5		Channel 5 Channel Name			Enc_Plugin	Global_0	Func_F1
+Map	LCD Row 1 Channel 6		Channel 6 Channel Name			Enc_Plugin	Global_0	Func_F1
+Map	LCD Row 1 Channel 7		Channel 7 Channel Name			Enc_Plugin	Global_0	Func_F1
+Map	LCD Row 1 Channel 8		Channel 8 Channel Name			Enc_Plugin	Global_0	Func_F1
+
+Map	Rotary 1		Channel 1 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F1
+Map	Rotary 2		Channel 2 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F1
+Map	Rotary 3		Channel 3 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F1
+Map	Rotary 4		Channel 4 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F1
+Map	Rotary 5		Channel 5 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F1
+Map	Rotary 6		Channel 6 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F1
+Map	Rotary 7		Channel 7 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F1
+Map	Rotary 8		Channel 8 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F1
+
+Map	Record 1		Channel 1 Bypass Insert FX			Enc_Plugin	Global_0	Func_F1
+Map	Record 2		Channel 2 Bypass Insert FX			Enc_Plugin	Global_0	Func_F1
+Map	Record 3		Channel 3 Bypass Insert FX			Enc_Plugin	Global_0	Func_F1
+Map	Record 4		Channel 4 Bypass Insert FX			Enc_Plugin	Global_0	Func_F1
+Map	Record 5		Channel 5 Bypass Insert FX			Enc_Plugin	Global_0	Func_F1
+Map	Record 6		Channel 6 Bypass Insert FX			Enc_Plugin	Global_0	Func_F1
+Map	Record 7		Channel 7 Bypass Insert FX			Enc_Plugin	Global_0	Func_F1
+Map	Record 8		Channel 8 Bypass Insert FX			Enc_Plugin	Global_0	Func_F1
+
+// _____________ F2
+
+
+Map	LCD Row 2 Channel 1		">ROUTE"			Enc_Plugin	Global_0	Func_F2
+
+Map	LCD Row 1 Channel 1		Channel 1 Channel Name			Enc_Plugin	Global_0	Func_F2
+Map	LCD Row 1 Channel 2		Channel 2 Channel Name			Enc_Plugin	Global_0	Func_F2
+Map	LCD Row 1 Channel 3		Channel 3 Channel Name			Enc_Plugin	Global_0	Func_F2
+Map	LCD Row 1 Channel 4		Channel 4 Channel Name			Enc_Plugin	Global_0	Func_F2
+Map	LCD Row 1 Channel 5		Channel 5 Channel Name			Enc_Plugin	Global_0	Func_F2
+Map	LCD Row 1 Channel 6		Channel 6 Channel Name			Enc_Plugin	Global_0	Func_F2
+Map	LCD Row 1 Channel 7		Channel 7 Channel Name			Enc_Plugin	Global_0	Func_F2
+Map	LCD Row 1 Channel 8		Channel 8 Channel Name			Enc_Plugin	Global_0	Func_F2
+
+Map	Rotary 1		Channel 1 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F2
+Map	Rotary 2		Channel 2 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F2
+Map	Rotary 3		Channel 3 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F2
+Map	Rotary 4		Channel 4 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F2
+Map	Rotary 5		Channel 5 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F2
+Map	Rotary 6		Channel 6 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F2
+Map	Rotary 7		Channel 7 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F2
+Map	Rotary 8		Channel 8 Input Gain		Single Dot	Enc_Plugin	Global_0	Func_F2
+
+Map	Record 1		Channel 1 Insert Pre			Enc_Plugin	Global_0	Func_F2
+Map	Record 2		Channel 2 Insert Pre			Enc_Plugin	Global_0	Func_F2
+Map	Record 3		Channel 3 Insert Pre			Enc_Plugin	Global_0	Func_F2
+Map	Record 4		Channel 4 Insert Pre			Enc_Plugin	Global_0	Func_F2
+Map	Record 5		Channel 5 Insert Pre			Enc_Plugin	Global_0	Func_F2
+Map	Record 6		Channel 6 Insert Pre			Enc_Plugin	Global_0	Func_F2
+Map	Record 7		Channel 7 Insert Pre			Enc_Plugin	Global_0	Func_F2
+Map	Record 8		Channel 8 Insert Pre			Enc_Plugin	Global_0	Func_F2
+
+// _____________ F3
+
+Map	LCD Row 2 Channel 1		">RETURN"			Enc_Plugin	Global_0	Func_F3
+
+Map	LCD Row 1 Channel 1		FX1 Name			Enc_Plugin	Global_0	Func_F3
+Map	LCD Row 1 Channel 2		FX2 Name			Enc_Plugin	Global_0	Func_F3
+Map	LCD Row 1 Channel 3		FX3 Name			Enc_Plugin	Global_0	Func_F3
+Map	LCD Row 1 Channel 4		FX4 Name			Enc_Plugin	Global_0	Func_F3
+Map	LCD Row 1 Channel 5		FX5 Name			Enc_Plugin	Global_0	Func_F3
+Map	LCD Row 1 Channel 6		FX6 Name			Enc_Plugin	Global_0	Func_F3
+Map	LCD Row 1 Channel 7		FX7 Name			Enc_Plugin	Global_0	Func_F3
+Map	LCD Row 1 Channel 8		FX8 Name			Enc_Plugin	Global_0	Func_F3
+
+Map	Rotary 1		FX1 Pan		Single Dot	Enc_Plugin	Global_0	Func_F3
+Map	Rotary 2		FX2 Pan		Single Dot	Enc_Plugin	Global_0	Func_F3
+Map	Rotary 3		FX3 Pan		Single Dot	Enc_Plugin	Global_0	Func_F3
+Map	Rotary 4		FX4 Pan		Single Dot	Enc_Plugin	Global_0	Func_F3
+Map	Rotary 5		FX5 Pan		Single Dot	Enc_Plugin	Global_0	Func_F3
+Map	Rotary 6		FX6 Pan		Single Dot	Enc_Plugin	Global_0	Func_F3
+Map	Rotary 7		FX7 Pan		Single Dot	Enc_Plugin	Global_0	Func_F3
+Map	Rotary 8		FX8 Pan		Single Dot	Enc_Plugin	Global_0	Func_F3
+
+Map	Fader 1		FX1 Return Level			Enc_Plugin	Global_0	Func_F3
+Map	Fader 2		FX2 Return Level			Enc_Plugin	Global_0	Func_F3
+Map	Fader 3		FX3 Return Level			Enc_Plugin	Global_0	Func_F3
+Map	Fader 4		FX4 Return Level			Enc_Plugin	Global_0	Func_F3
+Map	Fader 5		FX5 Return Level			Enc_Plugin	Global_0	Func_F3
+Map	Fader 6		FX6 Return Level			Enc_Plugin	Global_0	Func_F3
+Map	Fader 7		FX7 Return Level			Enc_Plugin	Global_0	Func_F3
+Map	Fader 8		FX8 Return Level			Enc_Plugin	Global_0	Func_F3
+
+Map	Record 1		FX1 Mute			Enc_Plugin	Global_0	Func_F3
+Map	Record 2		FX2 Mute			Enc_Plugin	Global_0	Func_F3
+Map	Record 3		FX3 Mute			Enc_Plugin	Global_0	Func_F3
+Map	Record 4		FX4 Mute			Enc_Plugin	Global_0	Func_F3
+Map	Record 5		FX5 Mute			Enc_Plugin	Global_0	Func_F3
+Map	Record 6		FX6 Mute			Enc_Plugin	Global_0	Func_F3
+Map	Record 7		FX7 Mute			Enc_Plugin	Global_0	Func_F3
+Map	Record 8		FX8 Mute			Enc_Plugin	Global_0	Func_F3
+
+Map	Peak Meter 1		FX1 Return Level Meter			Enc_Plugin	Global_0	Func_F3
+Map	Peak Meter 2		FX2 Return Level Meter			Enc_Plugin	Global_0	Func_F3
+Map	Peak Meter 3		FX3 Return Level Meter			Enc_Plugin	Global_0	Func_F3
+Map	Peak Meter 4		FX4 Return Level Meter			Enc_Plugin	Global_0	Func_F3
+Map	Peak Meter 5		FX5 Return Level Meter			Enc_Plugin	Global_0	Func_F3
+Map	Peak Meter 6		FX6 Return Level Meter			Enc_Plugin	Global_0	Func_F3
+Map	Peak Meter 7		FX7 Return Level Meter			Enc_Plugin	Global_0	Func_F3
+Map	Peak Meter 8		FX8 Return Level Meter			Enc_Plugin	Global_0	Func_F3
+
+
+
+// _____________ F4
+
+Map	LCD Row 2 Channel 1		">MASTER"			Enc_Plugin	Global_0	Func_F4
+
+Map	LCD Row 1 Channel 1		""			Enc_Plugin	Global_0	Func_F4
+Map	LCD Row 1 Channel 2		""			Enc_Plugin	Global_0	Func_F4
+Map	LCD Row 1 Channel 3		""			Enc_Plugin	Global_0	Func_F4
+Map	LCD Row 1 Channel 4		""			Enc_Plugin	Global_0	Func_F4
+Map	LCD Row 1 Channel 5		""			Enc_Plugin	Global_0	Func_F4
+Map	LCD Row 1 Channel 6		""			Enc_Plugin	Global_0	Func_F4
+Map	LCD Row 1 Channel 7		"Peak L"			Enc_Plugin	Global_0	Func_F4
+Map	LCD Row 1 Channel 8		"Peak R"			Enc_Plugin	Global_0	Func_F4
+
+Map	LCD Row 2 Channel 7		"VU Left"			Enc_Plugin	Global_0	Func_F4
+Map	LCD Row 2 Channel 8		"VU Right"			Enc_Plugin	Global_0	Func_F4
+
+Map	Peak Meter 1		""			Enc_Plugin	Global_0	Func_F4
+Map	Peak Meter 2		""			Enc_Plugin	Global_0	Func_F4
+Map	Peak Meter 3		""			Enc_Plugin	Global_0	Func_F4
+Map	Peak Meter 4		""			Enc_Plugin	Global_0	Func_F4
+Map	Peak Meter 5		""			Enc_Plugin	Global_0	Func_F4
+Map	Peak Meter 6		""			Enc_Plugin	Global_0	Func_F4
+Map	Peak Meter 7		Master Level Meter Left			Enc_Plugin	Global_0	Func_F4
+Map	Peak Meter 8		Master Level Meter Right			Enc_Plugin	Global_0	Func_F4
+
+Map	Rotary 7		Master Level Left Peak		Single Dot	Enc_Plugin	Global_0	Func_F4
+Map	Rotary 8		Master Level Right Peak		Single Dot	Enc_Plugin	Global_0	Func_F4
+
+
+
+// _____________ PLUGIN _____________ BUTTONS 
+// _____________ F1
+
+Map	LCD Row 2 Channel 1		">Insert"			Enc_Plugin	Func_F1
+
+Map	Record 1		Channel 1 Bypass Insert FX			Enc_Plugin	Select1	Func_F1
+Map	Record 1		Channel 2 Bypass Insert FX			Enc_Plugin	Select2	Func_F1
+Map	Record 1		Channel 3 Bypass Insert FX			Enc_Plugin	Select3	Func_F1
+Map	Record 1		Channel 4 Bypass Insert FX			Enc_Plugin	Select4	Func_F1
+Map	Record 1		Channel 5 Bypass Insert FX			Enc_Plugin	Select5	Func_F1
+Map	Record 1		Channel 6 Bypass Insert FX			Enc_Plugin	Select6	Func_F1
+Map	Record 1		Channel 7 Bypass Insert FX			Enc_Plugin	Select7	Func_F1
+Map	Record 1		Channel 8 Bypass Insert FX			Enc_Plugin	Select8	Func_F1
+
+Map	LCD Row 2 Channel 3		"Button"			Enc_Plugin	Func_F1
+
+Map	Record 3		Channel 1 Button 1			Enc_Plugin	Select1	Func_F1
+Map	Record 3		Channel 2 Button 1			Enc_Plugin	Select2	Func_F1
+Map	Record 3		Channel 3 Button 1			Enc_Plugin	Select3	Func_F1
+Map	Record 3		Channel 4 Button 1			Enc_Plugin	Select4	Func_F1
+Map	Record 3		Channel 5 Button 1			Enc_Plugin	Select5	Func_F1
+Map	Record 3		Channel 6 Button 1			Enc_Plugin	Select6	Func_F1
+Map	Record 3		Channel 7 Button 1			Enc_Plugin	Select7	Func_F1
+Map	Record 3		Channel 8 Button 1			Enc_Plugin	Select8	Func_F1
+
+Map	LCD Row 2 Channel 4		"Button"			Enc_Plugin	Func_F1
+
+Map	Record 4		Channel 1 Button 2			Enc_Plugin	Select1	Func_F1
+Map	Record 4		Channel 2 Button 2			Enc_Plugin	Select2	Func_F1
+Map	Record 4		Channel 3 Button 2			Enc_Plugin	Select3	Func_F1
+Map	Record 4		Channel 4 Button 2			Enc_Plugin	Select4	Func_F1
+Map	Record 4		Channel 5 Button 2			Enc_Plugin	Select5	Func_F1
+Map	Record 4		Channel 6 Button 2			Enc_Plugin	Select6	Func_F1
+Map	Record 4		Channel 7 Button 2			Enc_Plugin	Select7	Func_F1
+Map	Record 4		Channel 8 Button 2			Enc_Plugin	Select8	Func_F1
+
+Map	LCD Row 2 Channel 5		"Button"			Enc_Plugin	Func_F1
+
+Map	Record 5		Channel 1 Button 3			Enc_Plugin	Select1	Func_F1
+Map	Record 5		Channel 2 Button 3			Enc_Plugin	Select2	Func_F1
+Map	Record 5		Channel 3 Button 3			Enc_Plugin	Select3	Func_F1
+Map	Record 5		Channel 4 Button 3			Enc_Plugin	Select4	Func_F1
+Map	Record 5		Channel 5 Button 3			Enc_Plugin	Select5	Func_F1
+Map	Record 5		Channel 6 Button 3			Enc_Plugin	Select6	Func_F1
+Map	Record 5		Channel 7 Button 3			Enc_Plugin	Select7	Func_F1
+Map	Record 5		Channel 8 Button 3			Enc_Plugin	Select8	Func_F1
+
+Map	LCD Row 2 Channel 6		"Button"			Enc_Plugin	Func_F1
+
+Map	Record 6		Channel 1 Button 4			Enc_Plugin	Select1	Func_F1
+Map	Record 6		Channel 2 Button 4			Enc_Plugin	Select2	Func_F1
+Map	Record 6		Channel 3 Button 4			Enc_Plugin	Select3	Func_F1
+Map	Record 6		Channel 4 Button 4			Enc_Plugin	Select4	Func_F1
+Map	Record 6		Channel 5 Button 4			Enc_Plugin	Select5	Func_F1
+Map	Record 6		Channel 6 Button 4			Enc_Plugin	Select6	Func_F1
+Map	Record 6		Channel 7 Button 4			Enc_Plugin	Select7	Func_F1
+Map	Record 6		Channel 8 Button 4			Enc_Plugin	Select8	Func_F1
+
+
+
+// _____________ PLUGIN _____________ BUTTONS 
+// _____________ F2
+
+
+Map	LCD Row 2 Channel 1		">Route"			Enc_Plugin	Func_F2
+
+Map	Record 1		Channel 1 Bypass Insert FX			Enc_Plugin	Select1	Func_F2
+Map	Record 1		Channel 2 Bypass Insert FX			Enc_Plugin	Select2	Func_F2
+Map	Record 1		Channel 3 Bypass Insert FX			Enc_Plugin	Select3	Func_F2
+Map	Record 1		Channel 4 Bypass Insert FX			Enc_Plugin	Select4	Func_F2
+Map	Record 1		Channel 5 Bypass Insert FX			Enc_Plugin	Select5	Func_F2
+Map	Record 1		Channel 6 Bypass Insert FX			Enc_Plugin	Select6	Func_F2
+Map	Record 1		Channel 7 Bypass Insert FX			Enc_Plugin	Select7	Func_F2
+Map	Record 1		Channel 8 Bypass Insert FX			Enc_Plugin	Select8	Func_F2
+
+Map	LCD Row 2 Channel 3		"Phase"			Enc_Plugin	Func_F2
+
+Map	Record 3		Channel 1 Invert Phase			Enc_Plugin	Select1	Func_F2
+Map	Record 3		Channel 2 Invert Phase			Enc_Plugin	Select2	Func_F2
+Map	Record 3		Channel 3 Invert Phase			Enc_Plugin	Select3	Func_F2
+Map	Record 3		Channel 4 Invert Phase			Enc_Plugin	Select4	Func_F2
+Map	Record 3		Channel 5 Invert Phase			Enc_Plugin	Select5	Func_F2
+Map	Record 3		Channel 6 Invert Phase			Enc_Plugin	Select6	Func_F2
+Map	Record 3		Channel 7 Invert Phase			Enc_Plugin	Select7	Func_F2
+Map	Record 3		Channel 8 Invert Phase			Enc_Plugin	Select8	Func_F2
+
+Map	LCD Row 2 Channel 4		"InsPre"			Enc_Plugin	Func_F2
+
+Map	Record 4		Channel 1 Insert Pre			Enc_Plugin	Select1	Func_F2
+Map	Record 4		Channel 2 Insert Pre			Enc_Plugin	Select2	Func_F2
+Map	Record 4		Channel 3 Insert Pre			Enc_Plugin	Select3	Func_F2
+Map	Record 4		Channel 4 Insert Pre			Enc_Plugin	Select4	Func_F2
+Map	Record 4		Channel 5 Insert Pre			Enc_Plugin	Select5	Func_F2
+Map	Record 4		Channel 6 Insert Pre			Enc_Plugin	Select6	Func_F2
+Map	Record 4		Channel 7 Insert Pre			Enc_Plugin	Select7	Func_F2
+Map	Record 4		Channel 8 Insert Pre			Enc_Plugin	Select8	Func_F2
+
+Map	LCD Row 2 Channel 5		"DynPost"			Enc_Plugin	Func_F2
+
+Map	Record 5		Channel 1 Dyn Post EQ			Enc_Plugin	Select1	Func_F2
+Map	Record 5		Channel 2 Dyn Post EQ			Enc_Plugin	Select2	Func_F2
+Map	Record 5		Channel 3 Dyn Post EQ			Enc_Plugin	Select3	Func_F2
+Map	Record 5		Channel 4 Dyn Post EQ			Enc_Plugin	Select4	Func_F2
+Map	Record 5		Channel 5 Dyn Post EQ			Enc_Plugin	Select5	Func_F2
+Map	Record 5		Channel 6 Dyn Post EQ			Enc_Plugin	Select6	Func_F2
+Map	Record 5		Channel 7 Dyn Post EQ			Enc_Plugin	Select7	Func_F2
+Map	Record 5		Channel 8 Dyn Post EQ			Enc_Plugin	Select8	Func_F2
+
+
+
+// _____________ PLUGIN _____________ ROTARIES _____________ BOTH
+
+Map	LCD Row 1 Channel 1		Channel 1 Channel Name			Enc_Plugin		Select1
+Map	LCD Row 1 Channel 1		Channel 2 Channel Name			Enc_Plugin		Select2
+Map	LCD Row 1 Channel 1		Channel 3 Channel Name			Enc_Plugin		Select3
+Map	LCD Row 1 Channel 1		Channel 4 Channel Name			Enc_Plugin		Select4
+Map	LCD Row 1 Channel 1		Channel 5 Channel Name			Enc_Plugin		Select5
+Map	LCD Row 1 Channel 1		Channel 6 Channel Name			Enc_Plugin		Select6
+Map	LCD Row 1 Channel 1		Channel 7 Channel Name			Enc_Plugin		Select7
+Map	LCD Row 1 Channel 1		Channel 8 Channel Name			Enc_Plugin		Select8
+Map	LCD Row 1 Channel 2		""			Enc_Plugin
+
+
+
+// _____________ PLUGIN _____________ ROTARIES _____________ GLOBAL
+
+Map	LCD Row 1 Channel 3		"Rotary"			Enc_Plugin	Func_F1
+
+Map	Rotary 3		Channel 1 Rotary 1		Single Dot	Enc_Plugin	Select1	Func_F1
+Map	Rotary 3		Channel 2 Rotary 1		Single Dot	Enc_Plugin	Select2	Func_F1
+Map	Rotary 3		Channel 3 Rotary 1		Single Dot	Enc_Plugin	Select3	Func_F1
+Map	Rotary 3		Channel 4 Rotary 1		Single Dot	Enc_Plugin	Select4	Func_F1
+Map	Rotary 3		Channel 5 Rotary 1		Single Dot	Enc_Plugin	Select5	Func_F1
+Map	Rotary 3		Channel 6 Rotary 1		Single Dot	Enc_Plugin	Select6	Func_F1
+Map	Rotary 3		Channel 7 Rotary 1		Single Dot	Enc_Plugin	Select7	Func_F1
+Map	Rotary 3		Channel 8 Rotary 1		Single Dot	Enc_Plugin	Select8	Func_F1
+
+Map	LCD Row 1 Channel 4		"Rotary"			Enc_Plugin	Func_F1
+
+Map	Rotary 4		Channel 1 Rotary 2		Single Dot	Enc_Plugin	Select1	Func_F1
+Map	Rotary 4		Channel 2 Rotary 2		Single Dot	Enc_Plugin	Select2	Func_F1
+Map	Rotary 4		Channel 3 Rotary 2		Single Dot	Enc_Plugin	Select3	Func_F1
+Map	Rotary 4		Channel 4 Rotary 2		Single Dot	Enc_Plugin	Select4	Func_F1
+Map	Rotary 4		Channel 5 Rotary 2		Single Dot	Enc_Plugin	Select5	Func_F1
+Map	Rotary 4		Channel 6 Rotary 2		Single Dot	Enc_Plugin	Select6	Func_F1
+Map	Rotary 4		Channel 7 Rotary 2		Single Dot	Enc_Plugin	Select7	Func_F1
+Map	Rotary 4		Channel 8 Rotary 2		Single Dot	Enc_Plugin	Select8	Func_F1
+
+Map	LCD Row 1 Channel 5		"Rotary"			Enc_Plugin	Func_F1
+
+Map	Rotary 5		Channel 1 Rotary 3		Single Dot	Enc_Plugin	Select1	Func_F1
+Map	Rotary 5		Channel 2 Rotary 3		Single Dot	Enc_Plugin	Select2	Func_F1
+Map	Rotary 5		Channel 3 Rotary 3		Single Dot	Enc_Plugin	Select3	Func_F1
+Map	Rotary 5		Channel 4 Rotary 3		Single Dot	Enc_Plugin	Select4	Func_F1
+Map	Rotary 5		Channel 5 Rotary 3		Single Dot	Enc_Plugin	Select5	Func_F1
+Map	Rotary 5		Channel 6 Rotary 3		Single Dot	Enc_Plugin	Select6	Func_F1
+Map	Rotary 5		Channel 7 Rotary 3		Single Dot	Enc_Plugin	Select7	Func_F1
+Map	Rotary 5		Channel 8 Rotary 3		Single Dot	Enc_Plugin	Select8	Func_F1
+
+Map	LCD Row 1 Channel 6		"Rotary"			Enc_Plugin	Func_F1
+
+Map	Rotary 6		Channel 1 Rotary 4		Single Dot	Enc_Plugin	Select1	Func_F1
+Map	Rotary 6		Channel 2 Rotary 4		Single Dot	Enc_Plugin	Select2	Func_F1
+Map	Rotary 6		Channel 3 Rotary 4		Single Dot	Enc_Plugin	Select3	Func_F1
+Map	Rotary 6		Channel 4 Rotary 4		Single Dot	Enc_Plugin	Select4	Func_F1
+Map	Rotary 6		Channel 5 Rotary 4		Single Dot	Enc_Plugin	Select5	Func_F1
+Map	Rotary 6		Channel 6 Rotary 4		Single Dot	Enc_Plugin	Select6	Func_F1
+Map	Rotary 6		Channel 7 Rotary 4		Single Dot	Enc_Plugin	Select7	Func_F1
+Map	Rotary 6		Channel 8 Rotary 4		Single Dot	Enc_Plugin	Select8	Func_F1
+
+
+// _____________ PLUGIN _____________ ROTARIES _____________ FLIP
+
+Map	LCD Row 1 Channel 3		"Gain >"			Enc_Plugin	Func_F2
+
+Map	Rotary 3		Channel 1 Input Gain		Single Dot	Enc_Plugin	Select1	Func_F2
+Map	Rotary 3		Channel 2 Input Gain		Single Dot	Enc_Plugin	Select2	Func_F2
+Map	Rotary 3		Channel 3 Input Gain		Single Dot	Enc_Plugin	Select3	Func_F2
+Map	Rotary 3		Channel 4 Input Gain		Single Dot	Enc_Plugin	Select4	Func_F2
+Map	Rotary 3		Channel 5 Input Gain		Single Dot	Enc_Plugin	Select5	Func_F2
+Map	Rotary 3		Channel 6 Input Gain		Single Dot	Enc_Plugin	Select6	Func_F2
+Map	Rotary 3		Channel 7 Input Gain		Single Dot	Enc_Plugin	Select7	Func_F2
+Map	Rotary 3		Channel 8 Input Gain		Single Dot	Enc_Plugin	Select8	Func_F2
+
+Map	LCD Row 1 Channel 4		"Peak >"			Enc_Plugin	Func_F2
+
+Map	Rotary 4		Channel 1 To Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select1	Func_F2
+Map	Rotary 4		Channel 2 To Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select2	Func_F2
+Map	Rotary 4		Channel 3 To Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select3	Func_F2
+Map	Rotary 4		Channel 4 To Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select4	Func_F2
+Map	Rotary 4		Channel 5 To Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select5	Func_F2
+Map	Rotary 4		Channel 6 To Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select6	Func_F2
+Map	Rotary 4		Channel 7 To Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select7	Func_F2
+Map	Rotary 4		Channel 8 To Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select8	Func_F2
+
+Map	LCD Row 1 Channel 5		"> Peak"			Enc_Plugin	Func_F2
+
+Map	Rotary 5		Channel 1 From Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select1	Func_F2
+Map	Rotary 5		Channel 2 From Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select2	Func_F2
+Map	Rotary 5		Channel 3 From Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select3	Func_F2
+Map	Rotary 5		Channel 4 From Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select4	Func_F2
+Map	Rotary 5		Channel 5 From Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select5	Func_F2
+Map	Rotary 5		Channel 6 From Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select6	Func_F2
+Map	Rotary 5		Channel 7 From Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select7	Func_F2
+Map	Rotary 5		Channel 8 From Insert FX Peak Meter		MJ Meter	Enc_Plugin	Select8	Func_F2
+
+
+// _____________ INST
+
+
+// Map	Rotary 1		0			Enc_Inst
+// Map	Rotary 2		0			Enc_Inst
+// Map	Rotary 3		0			Enc_Inst
+// Map	Rotary 4		0			Enc_Inst
+// Map	Rotary 5		0			Enc_Inst
+// Map	Rotary 6		0			Enc_Inst
+// Map	Rotary 7		0			Enc_Inst
+// Map	Rotary 8		0			Enc_Inst
+// 
+// Map	Record 1		0			Enc_Inst
+// Map	Record 2		0			Enc_Inst
+// Map	Record 3		0			Enc_Inst
+// Map	Record 4		0			Enc_Inst
+// Map	Record 5		0			Enc_Inst
+// Map	Record 6		0			Enc_Inst
+// Map	Record 7		0			Enc_Inst
+// Map	Record 8		0			Enc_Inst
+
+// Map	Fader 1		Channel 1 Level			Enc_Inst
+// Map	Fader 2		Channel 2 Level			Enc_Inst
+// Map	Fader 3		Channel 3 Level			Enc_Inst
+// Map	Fader 4		Channel 4 Level			Enc_Inst
+// Map	Fader 5		Channel 5 Level			Enc_Inst
+// Map	Fader 6		Channel 6 Level			Enc_Inst
+// Map	Fader 7		Channel 7 Level			Enc_Inst
+// Map	Fader 8		Channel 8 Level			Enc_Inst
+
+Map	Fader 1		0			Global_0	Enc_Inst
+Map	Fader 2		0			Global_0	Enc_Inst
+Map	Fader 3		0			Global_0	Enc_Inst
+Map	Fader 4		0			Global_0	Enc_Inst
+Map	Fader 5		0			Global_0	Enc_Inst
+Map	Fader 6		0			Global_0	Enc_Inst
+Map	Fader 7		0			Global_0	Enc_Inst
+Map	Fader 8		0			Global_0	Enc_Inst
